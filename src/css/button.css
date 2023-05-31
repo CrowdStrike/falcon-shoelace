@@ -1,0 +1,34 @@
+/* Primary */
+
+sl-button::part(base) {
+  font: var(--cs-type-sans-serif-m-semibold);
+  box-shadow: var(--cs-shadow-drop-s);
+  padding: var(--cs-space-xxs) var(--cs-space-m);
+  border-radius: var(--cs-border-radius-s);
+  border-color: transparent;
+}
+
+sl-button[variant="primary"]::part(base) {
+  background-color: var(--cs-button-color-background-primary);
+  color: var(--cs-button-color-foreground-primary);
+}
+
+sl-button[variant="primary"]::part(base):hover {}
+
+sl-button[variant="primary"]::part(base):active {}
+
+sl-button[variant="primary"]::part(base):focus-visible {}
+
+/* Default/Secondary */
+
+sl-button[variant="default"]::part(base) {
+  background-color: var(--cs-button-color-background-secondary);
+  color: var(--cs-button-color-foreground-secondary);
+}
+
+/* Danger/Destructive */
+
+sl-button[variant="danger"]::part(base) {
+  background-color: var(--cs-button-color-background-destructive);
+  color: var(--cs-button-color-foreground-destructive);
+}
