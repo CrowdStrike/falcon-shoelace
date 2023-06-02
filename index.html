@@ -7,22 +7,46 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
     <title>Toucan Shoelace</title>
   </head>
+  <style>
+    body {
+      padding: 2rem;
+    }
+
+    .theme-dark {
+      background-color: #35363a;
+    }
+
+    #app {
+      display: flex;
+      gap: 2rem;
+    }
+  </style>
   <body>
     <h1>Shoelace components</h1>
-    <div>
-      <h2>Button</h2>
-      <p><a href="https://shoelace.style/components/button">Button docs</a></p>
+    <p><a href="https://shoelace.style">Shoelace docs</a></p>
 
-      <h3>Primary</h3>
-      <sl-button variant="primary">Primary</sl-button>
+    <div id="app">
+      <div>
+        <h2>Button</h2>
 
-      <h3>Default/Secondary</h3>
-      <sl-button variant="default">Default</sl-button>
+        <h3>Primary</h3>
+        <sl-button variant="primary">Primary</sl-button>
 
-      <h3>Danger/Destructive</h3>
-      <sl-button variant="danger">Danger</sl-button>
+        <h3>Default/Secondary</h3>
+        <sl-button variant="default">Default</sl-button>
 
-      <hr>
-    </div>
+        <h3>Danger/Destructive</h3>
+        <sl-button variant="danger">Danger</sl-button>
+      </div>
+
+      <div>
+        <h2>Button Group</h2>
+
+        <sl-button-group label="Alignment">
+          <sl-button>Left</sl-button>
+          <sl-button>Center</sl-button>
+          <sl-button>Right</sl-button>
+        </sl-button-group>
+      </div>
   </body>
 </html>
