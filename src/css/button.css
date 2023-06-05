@@ -57,12 +57,13 @@ sl-button[variant="danger"]::part(base) {
 sl-button[variant="danger"]::part(base):hover,
 sl-button[variant="danger"]::part(base):focus-visible {
   background-color: var(--cs-button-color-background-destructive-hover);
-  border: var(--cs-button-border-destructive-focus);
+  border: var(--cs-button-border-destructive-hover);
   color: var(--cs-button-color-foreground-destructive-hover);
 }
 
 sl-button[variant="danger"]::part(base):active {
   background-color: var(--cs-button-color-background-destructive-active);
+  border: var(--cs-button-border-destructive-active);
   color: var(--cs-button-color-foreground-destructive-active);
 }
 
