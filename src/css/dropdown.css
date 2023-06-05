@@ -1,0 +1,22 @@
+sl-dropdown::part(panel) {
+  background: var(--cs-popover-color-background);
+  box-shadow: var(--cs-shadow-drop-m);
+}
+
+sl-dropdown sl-button::part(base) {
+  padding: var(--cs-space-xxs) var(--cs-space-xs);
+  gap: var(--cs-space-xxs);
+}
+
+sl-menu-item::part(base) {
+  font: var(--cs-type-sans-serif-m-tight);
+  padding: var(--cs-space-s) var(--cs-space-xs);
+}
+
+sl-menu-item [slot="prefix"] {
+  margin-inline-end: var(--cs-space-xs);
+}
+
+sl-menu-item::part(base):hover {
+  background: var(--cs-overlay-dark);
+}
