@@ -1,7 +1,4 @@
-@import 'toucan-styles/styles/base.css';
-@import 'toucan-styles/styles/shared.css';
-@import 'toucan-styles/styles/light.css';
-@import 'toucan-styles/styles/dark.css';
+@import 'toucan-styles/dist/style.css';
 
 @import './css/button.css';
 @import './css/dropdown.css';
