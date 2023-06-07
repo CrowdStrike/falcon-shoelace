@@ -1,5 +1,6 @@
 @import 'toucan-styles/dist/style.css';
 
 @import './css/button.css';
+@import './css/button-group.css';
 @import './css/menu.css';
 @import './css/dropdown.css';

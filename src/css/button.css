@@ -1,19 +1,38 @@
-sl-button[disabled] {
-  pointer-events: none;
-}
-
 sl-button::part(base) {
   border-radius: var(--cs-border-radius-s);
   border: var(--cs-button-border);
   box-shadow: var(--cs-shadow-drop-s);
-  font: var(--cs-type-sans-serif-m-semibold);
-  padding: var(--cs-space-xxs) var(--cs-space-m);
+  font: var(--cs-type-sans-serif-m-tight-semibold);
+  padding: var(--cs-space-xs) var(--cs-space-m);
 }
 
+/* Disabled */
+
+sl-button[variant][disabled]::part(base),
+sl-button[variant][disabled]::part(base):hover,
+sl-button[variant][disabled]::part(base):active,
+sl-button[variant][disabled]::part(base):focus-visible {
+  background-color: var(--cs-overlay-dark);
+  box-shadow: none;
+  color: var(--cs-button-color-foreground-disabled);
+  cursor: default;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Focus */
+
 sl-button::part(base):focus-visible {
-  border: var(--cs-button-border-focus);
+  background-image: var(--cs-button-background-image-focus);
+  background-color: transparent;
   outline-offset: var(--cs-button-outline-offset-focus);
   outline: var(--cs-button-outline-focus);
+}
+
+/* Neutral */
+
+sl-button[variant="neutral"]::part(base) {
+  box-shadow: none;
 }
 
 /* Primary */
@@ -32,7 +51,7 @@ sl-button[variant="primary"]::part(base):active {
   background-color: var(--cs-button-color-background-primary-active);
 }
 
-/* Default/Secondary */
+/* Default */
 
 sl-button[variant="default"]::part(base) {
   background-color: var(--cs-button-color-background-secondary);
@@ -48,65 +67,43 @@ sl-button[variant="default"]::part(base):active {
   background-color: var(--cs-button-color-background-secondary-active);
 }
 
-/* Danger/Destructive */
+/* Danger */
 
 sl-button[variant="danger"]::part(base) {
-  background-color: var(--cs-button-color-background-destructive);
-  color: var(--cs-button-color-foreground-destructive);
+  background-color: var(--cs-button-color-background-danger);
+  color: var(--cs-button-color-foreground-danger);
 }
 
-sl-button[variant="danger"]::part(base):hover,
+sl-button[variant="danger"]::part(base):hover {
+  background-color: var(--cs-button-color-background-danger-hover);
+  color: var(--cs-button-color-foreground-danger-hover);
+}
+
 sl-button[variant="danger"]::part(base):focus-visible {
-  background-color: var(--cs-button-color-background-destructive-hover);
-  border: var(--cs-button-border-destructive-hover);
-  color: var(--cs-button-color-foreground-destructive-hover);
+  background-color: var(--cs-button-color-background-danger-hover);
+  background-image: var(--cs-button-background-image-danger-focus);
+  color: var(--cs-button-color-foreground-danger-hover);
 }
 
 sl-button[variant="danger"]::part(base):active {
-  background-color: var(--cs-button-color-background-destructive-active);
-  border: var(--cs-button-border-destructive-active);
-  color: var(--cs-button-color-foreground-destructive-active);
+  background-color: var(--cs-button-color-background-danger-active);
+  background-image: none;
+  color: var(--cs-button-color-foreground-danger-active);
 }
 
 /* Text */
 
 sl-button[variant="text"]::part(base) {
   box-shadow: none;
-  color: var(--cs-button-color-foreground-text)
+  color: var(--cs-button-color-foreground-link);
+  text-decoration: underline;
 }
 
 sl-button[variant="text"]::part(base):hover,
 sl-button[variant="text"]::part(base):focus-visible {
-  color: var(--cs-button-color-foreground-text-hover);
+  color: var(--cs-button-color-foreground-link-hover);
 }
 
 sl-button[variant="text"]::part(base):active {
-  color: var(--cs-button-color-foreground-text-active);
-}
-
-/* Button Group */
-
-sl-button-group::part(base) {
-  box-shadow: var(--cs-shadow-drop-s);
-  border-radius: var(--cs-border-radius-s);
-  gap: 1px;
-}
-
-sl-button-group sl-button::part(base) {
-  border-radius: 0;
-  box-shadow: none;
-}
-
-sl-button-group sl-button::part(base)::after {
-  border-left-width: 0;
-}
-
-sl-button-group sl-button:first-child::part(base) {
-  border-start-start-radius: var(--cs-border-radius-s);
-  border-end-start-radius: var(--cs-border-radius-s);
-}
-
-sl-button-group sl-button:last-child::part(base) {
-  border-start-end-radius: var(--cs-border-radius-s);
-  border-end-end-radius: var(--cs-border-radius-s);
+  color: var(--cs-button-color-foreground-link-active);
 }
