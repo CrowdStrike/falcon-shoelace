@@ -22,22 +22,24 @@
     }
   </style>
   <body>
-    <h1>Shoelace components</h1>
-    <p><a href="https://shoelace.style">Shoelace docs</a></p>
-
+    <h1>Shoelace</h1>
     <div id="app">
       <div>
-        <h2>Button</h2>
-
-        <sl-button>Default</sl-button>
+        <sl-button variant="neutral">Neutral</sl-button>
         <sl-button variant="primary">Primary</sl-button>
+        <sl-button variant="default">Default</sl-button>
         <sl-button variant="danger">Danger</sl-button>
         <sl-button variant="text">Text</sl-button>
+        <br />
+        <br />
+        <sl-button disabled variant="neutral">Neutral</sl-button>
+        <sl-button disabled variant="primary">Primary</sl-button>
+        <sl-button disabled variant="default">Default</sl-button>
+        <sl-button disabled variant="danger">Danger</sl-button>
+        <sl-button disabled variant="text">Text</sl-button>
       </div>
 
       <div>
-        <h2>Button Group</h2>
-
         <sl-button-group label="Alignment">
           <sl-button>Left</sl-button>
           <sl-button>Center</sl-button>
@@ -46,8 +48,6 @@
       </div>
 
       <div>
-        <h2>Dropdown</h2>
-
         <sl-dropdown distance="4">
           <sl-button slot="trigger" caret>Dropdown</sl-button>
           <sl-menu>
@@ -56,6 +56,7 @@
             <sl-menu-item>Dropdown Item 3</sl-menu-item>
             <sl-divider></sl-divider>
             <sl-menu-item type="checkbox" checked>Checkbox</sl-menu-item>
+            <sl-menu-label>Fruits</sl-menu-label>
             <sl-menu-item disabled>Disabled</sl-menu-item>
             <sl-divider></sl-divider>
             <sl-menu-item>
@@ -66,6 +67,24 @@
               Suffix Icon
               <sl-icon slot="suffix" name="heart"></sl-icon>
             </sl-menu-item>
+          </sl-menu>
+        </sl-dropdown>
+
+      </div>
+
+      <div>
+        <sl-dropdown>
+          <sl-button slot="trigger" caret>Dropdown</sl-button>
+          <sl-menu>
+            <sl-menu-label>Fruits</sl-menu-label>
+            <sl-menu-item value="apple">Apple</sl-menu-item>
+            <sl-menu-item value="banana">Banana</sl-menu-item>
+            <sl-menu-item value="orange">Orange</sl-menu-item>
+            <sl-divider></sl-divider>
+            <sl-menu-label>Vegetables</sl-menu-label>
+            <sl-menu-item value="broccoli">Broccoli</sl-menu-item>
+            <sl-menu-item value="carrot">Carrot</sl-menu-item>
+            <sl-menu-item value="zucchini">Zucchini</sl-menu-item>
           </sl-menu>
         </sl-dropdown>
       </div>
