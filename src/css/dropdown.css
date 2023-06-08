@@ -2,7 +2,3 @@ sl-dropdown::part(panel) {
   background-color: var(--cs-popover-color-background);
   box-shadow: var(--cs-shadow-drop-m);
 }
-
-sl-dropdown sl-button::part(base) {
-  gap: var(--cs-space-xxs);
-}
