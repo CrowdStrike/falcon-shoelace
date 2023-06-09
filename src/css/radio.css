@@ -1,0 +1,18 @@
+sl-radio::part(base) {
+  display: inline-flex;
+  align-items: center;
+}
+
+sl-radio::part(control) {
+  width: 1rem;
+  height: 1rem;
+  border: var(--cs-checkbox-border);
+  background-color: var(--cs-checkbox-color-background);
+  border-radius: var(--cs-border-radius-circle);
+}
+
+sl-radio::part(control--checked) {
+  background-color: var(--cs-checkbox-color-checked);
+  border-color: transparent;
+  color: var(--cs-checkbox-color-foreground);
+}
