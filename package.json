@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "postcss": "^8.4.24",
+    "postcss-nesting": "^11.2.2",
+    "toucan-styles": "link:../toucan-styles",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2",
-    "toucan-styles": "link:../toucan-styles"
+    "vite": "^4.3.2"
   }
 }

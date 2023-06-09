@@ -8,16 +8,16 @@ sl-menu-item {
   color: var(--cs-menu-item-color-foreground);
   font: var(--cs-type-sans-serif-s-tight);
   padding: var(--cs-space-xs) var(--cs-space-xxs);
-}
 
-sl-menu-item:hover {
-  background-color: var(--cs-overlay-dark);
-}
+  &:hover {
+    background-color: var(--cs-overlay-dark);
+  }
 
-sl-menu-item:focus-visible {
-  background-image: var(--cs-button-background-image-focus);
-}
+  &:focus-visible {
+    background-image: var(--cs-button-background-image-focus);
+  }
 
-sl-menu-item [slot="prefix"] {
-  margin-inline-end: var(--cs-space-xs);
+  & [slot="prefix"] {
+    margin-inline-end: var(--cs-space-xs);
+  }
 }

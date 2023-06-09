@@ -4,6 +4,13 @@ sl-button::part(base) {
   box-shadow: var(--cs-shadow-drop-s);
   font: var(--cs-type-sans-serif-s-tight-semibold);
   padding-inline-end: var(--cs-space-xs);
+
+  &::part(base):focus-visible {
+    background-image: var(--cs-button-background-image-focus);
+    background-color: transparent;
+    outline-offset: var(--cs-button-outline-offset-focus);
+    outline: var(--cs-button-outline-focus);
+  }
 }
 
 sl-button::part(label) {
@@ -24,90 +31,71 @@ sl-button[variant][disabled]::part(base):focus-visible {
   text-decoration: none;
 }
 
-/* Focus */
-
-sl-button::part(base):focus-visible {
-  background-image: var(--cs-button-background-image-focus);
-  background-color: transparent;
-  outline-offset: var(--cs-button-outline-offset-focus);
-  outline: var(--cs-button-outline-focus);
-}
-
-/* Neutral */
-
 sl-button[variant="neutral"]::part(base) {
   box-shadow: none;
 }
 
-/* Primary */
-
 sl-button[variant="primary"]::part(base) {
   background-color: var(--cs-button-color-background-primary);
   color: var(--cs-button-color-foreground-primary);
-}
 
-sl-button[variant="primary"]::part(base):hover,
-sl-button[variant="primary"]::part(base):focus-visible {
-  background-color: var(--cs-button-color-background-primary-hover);
-}
+  &::part(base):hover,
+  &::part(base):focus-visible {
+    background-color: var(--cs-button-color-background-primary-hover);
+  }
 
-sl-button[variant="primary"]::part(base):active {
-  background-color: var(--cs-button-color-background-primary-active);
+  &::part(base):active {
+    background-color: var(--cs-button-color-background-primary-active);
+  }
 }
-
-/* Default */
 
 sl-button[variant="default"]::part(base) {
   background-color: var(--cs-button-color-background-secondary);
   color: var(--cs-button-color-foreground-secondary);
-}
 
-sl-button[variant="default"]::part(base):hover,
-sl-button[variant="default"]::part(base):focus-visible {
-  background-color: var(--cs-button-color-background-secondary-hover);
-}
+  &[variant="default"]::part(base):hover,
+  &[variant="default"]::part(base):focus-visible {
+    background-color: var(--cs-button-color-background-secondary-hover);
+  }
 
-sl-button[variant="default"]::part(base):active {
-  background-color: var(--cs-button-color-background-secondary-active);
+  &[variant="default"]::part(base):active {
+    background-color: var(--cs-button-color-background-secondary-active);
+  }
 }
-
-/* Danger */
 
 sl-button[variant="danger"]::part(base) {
   background-color: var(--cs-button-color-background-danger);
   color: var(--cs-button-color-foreground-danger);
-}
 
-sl-button[variant="danger"]::part(base):hover {
-  background-color: var(--cs-button-color-background-danger-hover);
-  color: var(--cs-button-color-foreground-danger-hover);
-}
+  &[variant="danger"]::part(base):hover {
+    background-color: var(--cs-button-color-background-danger-hover);
+    color: var(--cs-button-color-foreground-danger-hover);
+  }
 
-sl-button[variant="danger"]::part(base):focus-visible {
-  background-color: var(--cs-button-color-background-danger-hover);
-  background-image: var(--cs-button-background-image-danger-focus);
-  color: var(--cs-button-color-foreground-danger-hover);
-}
+  &[variant="danger"]::part(base):focus-visible {
+    background-color: var(--cs-button-color-background-danger-hover);
+    background-image: var(--cs-button-background-image-danger-focus);
+    color: var(--cs-button-color-foreground-danger-hover);
+  }
 
-sl-button[variant="danger"]::part(base):active {
-  background-color: var(--cs-button-color-background-danger-active);
-  background-image: none;
-  color: var(--cs-button-color-foreground-danger-active);
+  &[variant="danger"]::part(base):active {
+    background-color: var(--cs-button-color-background-danger-active);
+    background-image: none;
+    color: var(--cs-button-color-foreground-danger-active);
+  }
 }
-
-/* Text */
 
 sl-button[variant="text"]::part(base) {
   box-shadow: none;
   color: var(--cs-button-color-foreground-link);
   text-decoration: underline;
-}
 
-sl-button[variant="text"]::part(base):hover,
-sl-button[variant="text"]::part(base):focus-visible {
-  color: var(--cs-button-color-foreground-link-hover);
-}
+  &[variant="text"]::part(base):hover,
+  &[variant="text"]::part(base):focus-visible {
+    color: var(--cs-button-color-foreground-link-hover);
+  }
 
-sl-button[variant="text"]::part(base):active {
-  color: var(--cs-button-color-foreground-link-active);
+  &[variant="text"]::part(base):active {
+    color: var(--cs-button-color-foreground-link-active);
+  }
 }

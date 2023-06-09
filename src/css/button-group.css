@@ -2,23 +2,23 @@ sl-button-group::part(base) {
   box-shadow: var(--cs-shadow-drop-s);
   border-radius: var(--cs-border-radius-s);
   gap: 1px;
-}
 
-sl-button-group sl-button::part(base) {
-  border-radius: 0;
-  box-shadow: none;
-}
+  & sl-button::part(base) {
+    border-radius: 0;
+    box-shadow: none;
+  }
 
-sl-button-group sl-button::part(base)::after {
-  border-left-width: 0;
-}
+  & sl-button::part(base)::after {
+    border-left-width: 0;
+  }
 
-sl-button-group sl-button:first-child::part(base) {
-  border-start-start-radius: var(--cs-border-radius-s);
-  border-end-start-radius: var(--cs-border-radius-s);
-}
+  & sl-button:first-child::part(base) {
+    border-start-start-radius: var(--cs-border-radius-s);
+    border-end-start-radius: var(--cs-border-radius-s);
+  }
 
-sl-button-group sl-button:last-child::part(base) {
-  border-start-end-radius: var(--cs-border-radius-s);
-  border-end-end-radius: var(--cs-border-radius-s);
+  & sl-button:last-child::part(base) {
+    border-start-end-radius: var(--cs-border-radius-s);
+    border-end-end-radius: var(--cs-border-radius-s);
+  }
 }
