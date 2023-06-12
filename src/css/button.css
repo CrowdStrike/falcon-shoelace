@@ -3,9 +3,8 @@ sl-button::part(base) {
   border: var(--cs-button-border);
   box-shadow: var(--cs-shadow-drop-s);
   font: var(--cs-type-sans-serif-s-tight-semibold);
-  padding-inline-end: var(--cs-space-xs);
 
-  &::part(base):focus-visible {
+  &:focus-visible {
     background-image: var(--cs-button-background-image-focus);
     background-color: transparent;
     outline-offset: var(--cs-button-outline-offset-focus);
@@ -14,21 +13,20 @@ sl-button::part(base) {
 }
 
 sl-button::part(label) {
-  padding: var(--cs-space-xs) var(--cs-space-xxs) var(--cs-space-xs) var(--cs-space-m);
+  padding-block: var(--cs-space-xs);
+  padding-inline: var(--cs-space-m);
 }
 
-/* Disabled */
+sl-button[variant][disabled] {
+  pointer-events: none;
 
-sl-button[variant][disabled]::part(base),
-sl-button[variant][disabled]::part(base):hover,
-sl-button[variant][disabled]::part(base):active,
-sl-button[variant][disabled]::part(base):focus-visible {
-  background-color: var(--cs-overlay-dark);
-  box-shadow: none;
-  color: var(--cs-button-color-foreground-disabled);
-  cursor: default;
-  opacity: 1;
-  text-decoration: none;
+  &::part(base) {
+    background-color: var(--cs-overlay-dark);
+    box-shadow: none;
+    color: var(--cs-button-color-foreground-disabled);
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
 sl-button[variant="neutral"]::part(base) {
@@ -39,12 +37,12 @@ sl-button[variant="primary"]::part(base) {
   background-color: var(--cs-button-color-background-primary);
   color: var(--cs-button-color-foreground-primary);
 
-  &::part(base):hover,
-  &::part(base):focus-visible {
+  &:hover,
+  &:focus-visible {
     background-color: var(--cs-button-color-background-primary-hover);
   }
 
-  &::part(base):active {
+  &:active {
     background-color: var(--cs-button-color-background-primary-active);
   }
 }
@@ -53,12 +51,12 @@ sl-button[variant="default"]::part(base) {
   background-color: var(--cs-button-color-background-secondary);
   color: var(--cs-button-color-foreground-secondary);
 
-  &[variant="default"]::part(base):hover,
-  &[variant="default"]::part(base):focus-visible {
+  &:hover,
+  &:focus-visible {
     background-color: var(--cs-button-color-background-secondary-hover);
   }
 
-  &[variant="default"]::part(base):active {
+  &:active {
     background-color: var(--cs-button-color-background-secondary-active);
   }
 }
@@ -67,18 +65,18 @@ sl-button[variant="danger"]::part(base) {
   background-color: var(--cs-button-color-background-danger);
   color: var(--cs-button-color-foreground-danger);
 
-  &[variant="danger"]::part(base):hover {
+  &:hover {
     background-color: var(--cs-button-color-background-danger-hover);
     color: var(--cs-button-color-foreground-danger-hover);
   }
 
-  &[variant="danger"]::part(base):focus-visible {
+  &:focus-visible {
     background-color: var(--cs-button-color-background-danger-hover);
     background-image: var(--cs-button-background-image-danger-focus);
     color: var(--cs-button-color-foreground-danger-hover);
   }
 
-  &[variant="danger"]::part(base):active {
+  &:active {
     background-color: var(--cs-button-color-background-danger-active);
     background-image: none;
     color: var(--cs-button-color-foreground-danger-active);
@@ -90,12 +88,12 @@ sl-button[variant="text"]::part(base) {
   color: var(--cs-button-color-foreground-link);
   text-decoration: underline;
 
-  &[variant="text"]::part(base):hover,
-  &[variant="text"]::part(base):focus-visible {
+  &:hover,
+  &:focus-visible {
     color: var(--cs-button-color-foreground-link-hover);
   }
 
-  &[variant="text"]::part(base):active {
+  &:active {
     color: var(--cs-button-color-foreground-link-active);
   }
 }
