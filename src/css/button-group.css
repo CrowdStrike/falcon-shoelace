@@ -5,6 +5,10 @@ sl-button-group {
     gap: 1px;
   }
 
+  & sl-button {
+    flex: 1;
+  }
+
   & sl-button::part(base) {
     border-radius: 0;
     box-shadow: none;
