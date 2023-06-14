@@ -90,8 +90,9 @@
         </sl-dropdown>
       </div>
 
-      <div>
-        <sl-checkbox>Checkbox</sl-checkbox>
+      <div style="display: flex; flex-direction: column; gap: 1rem">
+        <sl-input label="Name" help-text="Your preferred name"></sl-input>
+        <sl-textarea label="Feedback" help-text="Please tell us what you think."> </sl-textarea>
       </div>
 
       <div>
@@ -104,6 +105,27 @@
           <sl-radio value="2">Option 2</sl-radio>
           <sl-radio value="3">Option 3</sl-radio>
         </sl-radio-group>
+      </div>
+
+      <div>
+        <form style="display: flex; flex-direction: column; gap: 1rem;">
+          <sl-input
+            name="name"
+            label="Name"
+            help-text="Your preferred name"
+            autocomplete="off"
+            required
+          ></sl-input>
+
+          <sl-textarea label="Feedback" help-text="Please tell us what you think." required> </sl-textarea>
+
+          <sl-checkbox value="accept" required>Accept terms and conditions</sl-checkbox>
+
+          <sl-button-group>
+            <sl-button type="reset" variant="default">Reset</sl-button>
+            <sl-button type="submit" variant="primary">Submit</sl-button>
+          </sl-button-group>
+        </form>
       </div>
     </div>
   </body>

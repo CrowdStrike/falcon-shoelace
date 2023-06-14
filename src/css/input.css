@@ -1,0 +1,48 @@
+sl-input,
+sl-textarea {
+  --sl-input-border-radius-medium: var(--cs-border-radius-s);
+  --sl-input-border-width: 0;
+  --sl-input-color: var(--cs-input-color-foreground);
+  --sl-input-help-text-color: var(--cs-input-color-label);
+  --sl-input-label-color: var(--cs-input-color-label);
+  --sl-input-placeholder-color: var(--cs-input-color-placeholder);
+  --sl-input-spacing-medium: var(--cs-space-s);
+
+  &::part(base) {
+    background-color: var(--cs-overlay-darker);
+    box-shadow: var(--cs-input-shadow);
+    font: var(--cs-type-sans-serif-s-tight);
+  }
+
+  &::part(base):focus-within {
+    box-shadow: var(--cs-input-shadow-focus)
+  }
+
+  &::part(form-control-label) {
+    font: var(--cs-type-sans-serif-s);
+  }
+
+  &::part(input) {
+    padding: var(--cs-space-xs);
+  }
+
+  & [slot="prefix"] {
+    margin-inline-start: var(--cs-space-s);
+  }
+
+  & [slot="suffix"] {
+    margin-inline-end: var(--cs-space-s);
+  }
+
+  &::part(form-control-help-text) {
+    font: var(--cs-type-sans-serif-xs);
+  }
+
+  &[data-user-invalid]::part(base) {
+    box-shadow: var(--cs-input-shadow-invalid);
+
+    &:focus-within {
+      box-shadow: var(--cs-input-shadow-invalid-focus);
+    }
+  }
+}
