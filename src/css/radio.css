@@ -1,4 +1,7 @@
 sl-radio::part(base) {
+  --sl-focus-ring: var(--cs-checkbox-outline-focus);
+  --sl-focus-ring-offset: var(--cs-checkbox-outline-offset-focus);
+
   display: inline-flex;
   align-items: center;
 }
@@ -12,7 +15,7 @@ sl-radio::part(control) {
 }
 
 sl-radio::part(control--checked) {
-  background-color: var(--cs-checkbox-color-checked);
+  background-color: var(--cs-checkbox-color-background-checked);
   border-color: transparent;
-  color: var(--cs-checkbox-color-foreground);
+  color: var(--cs-checkbox-color-foreground-checked);
 }

@@ -1,19 +1,33 @@
-sl-checkbox::part(base) {
-  display: inline-flex;
-  align-items: center;
+sl-checkbox {
+  --sl-focus-ring: var(--cs-checkbox-outline-focus);
+  --sl-focus-ring-offset: var(--cs-checkbox-outline-offset-focus);
+
+  &::part(base) {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &::part(control) {
+    width: 1rem;
+    height: 1rem;
+    border: var(--cs-checkbox-border);
+    background-color: var(--cs-checkbox-color-background);
+    border-radius: var(--cs-border-radius-s);
+    padding: 1px;
+  }
+
+  &::part(control--checked) {
+    background-color: var(--cs-checkbox-color-background-checked);
+    border-color: transparent;
+    color: var(--cs-checkbox-color-foreground-checked);
+  }
 }
 
-sl-checkbox::part(control) {
-  width: 1rem;
-  height: 1rem;
-  border: var(--cs-checkbox-border);
-  background-color: var(--cs-checkbox-color-background);
-  border-radius: var(--cs-border-radius-s);
-  padding: 1px;
-}
+sl-checkbox[data-user-invalid] {
+  --sl-focus-ring: 2px solid #e9181f63;
+  --sl-focus-ring-offset: 0;
 
-sl-checkbox::part(control--checked) {
-  background-color: var(--cs-checkbox-color-checked);
-  border-color: transparent;
-  color: var(--cs-checkbox-color-foreground);
+  &::part(control) {
+    border: var(--cs-checkbox-outline-invalid);
+  }
 }
