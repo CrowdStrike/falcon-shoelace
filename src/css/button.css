@@ -2,6 +2,7 @@ sl-button::part(base) {
   border: var(--cs-button-border);
   box-shadow: var(--cs-shadow-drop-s);
   font: var(--cs-type-sans-serif-s-tight-semibold);
+  padding-inline: var(--cs-space-xs);
 
   &:focus-visible {
     background-image: var(--cs-button-background-image-focus);
@@ -12,8 +13,7 @@ sl-button::part(base) {
 }
 
 sl-button::part(label) {
-  padding-block: var(--cs-space-xs);
-  padding-inline: var(--cs-space-m);
+  padding: var(--cs-space-xs);
 }
 
 sl-button[variant][disabled] {

@@ -28,14 +28,19 @@
       <div>
         <sl-button variant="neutral">Neutral</sl-button>
         <sl-button variant="primary">Primary</sl-button>
-        <sl-button variant="default">Default</sl-button>
+        <sl-button>Default</sl-button>
         <sl-button variant="danger">Danger</sl-button>
         <sl-button variant="text">Text</sl-button>
+        <sl-button variant="default">
+          <sl-icon slot="prefix" name="gear"></sl-icon>
+          <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
+          Open
+        </sl-button>
         <br />
         <br />
         <sl-button disabled variant="neutral">Neutral</sl-button>
         <sl-button disabled variant="primary">Primary</sl-button>
-        <sl-button disabled variant="default">Default</sl-button>
+        <sl-button disabled>Default</sl-button>
         <sl-button disabled variant="danger">Danger</sl-button>
         <sl-button disabled variant="text">Text</sl-button>
       </div>
@@ -50,7 +55,10 @@
 
       <div>
         <sl-dropdown>
-          <sl-button slot="trigger" caret>Dropdown</sl-button>
+          <sl-button slot="trigger" caret>
+            <sl-icon slot="prefix" name="gear"></sl-icon>
+            Dropdown
+          </sl-button>
           <sl-menu>
             <sl-menu-item>Dropdown Item 1</sl-menu-item>
             <sl-menu-item>Dropdown Item 2</sl-menu-item>
@@ -58,8 +66,17 @@
             <sl-divider></sl-divider>
             <sl-menu-item type="checkbox" checked>Checkbox</sl-menu-item>
             <sl-menu-label>Fruits</sl-menu-label>
+            <sl-menu-item value="apple">Apple</sl-menu-item>
+            <sl-menu-item value="banana">Banana</sl-menu-item>
+            <sl-menu-item value="orange">Orange</sl-menu-item>
+            <sl-divider></sl-divider>
+            <sl-menu-label>Vegetables</sl-menu-label>
+            <sl-menu-item value="broccoli">Broccoli</sl-menu-item>
+            <sl-menu-item value="carrot">Carrot</sl-menu-item>
+            <sl-menu-item value="zucchini">Zucchini</sl-menu-item>
             <sl-menu-item disabled>Disabled</sl-menu-item>
             <sl-divider></sl-divider>
+            <sl-menu-label>Icons</sl-menu-label>
             <sl-menu-item>
               Prefix
               <sl-icon slot="prefix" name="gift"></sl-icon>
@@ -71,21 +88,14 @@
           </sl-menu>
         </sl-dropdown>
 
-      </div>
+        <br />
+        <br />
 
-      <div>
-        <sl-dropdown>
+        <sl-dropdown disabled>
           <sl-button slot="trigger" caret>Dropdown</sl-button>
           <sl-menu>
-            <sl-menu-label>Fruits</sl-menu-label>
-            <sl-menu-item value="apple">Apple</sl-menu-item>
-            <sl-menu-item value="banana">Banana</sl-menu-item>
-            <sl-menu-item value="orange">Orange</sl-menu-item>
-            <sl-divider></sl-divider>
-            <sl-menu-label>Vegetables</sl-menu-label>
-            <sl-menu-item value="broccoli">Broccoli</sl-menu-item>
-            <sl-menu-item value="carrot">Carrot</sl-menu-item>
-            <sl-menu-item value="zucchini">Zucchini</sl-menu-item>
+            <sl-menu-item>Dropdown Item 1</sl-menu-item>
+            <sl-menu-item>Dropdown Item 2</sl-menu-item>
           </sl-menu>
         </sl-dropdown>
       </div>
