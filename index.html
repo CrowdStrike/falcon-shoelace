@@ -49,7 +49,7 @@
       </div>
 
       <div>
-        <sl-dropdown distance="4">
+        <sl-dropdown>
           <sl-button slot="trigger" caret>Dropdown</sl-button>
           <sl-menu>
             <sl-menu-item>Dropdown Item 1</sl-menu-item>
@@ -115,7 +115,16 @@
             help-text="Your preferred name"
             autocomplete="off"
             required
-          ></sl-input>
+          >
+          <sl-icon name="house" slot="prefix"></sl-icon>
+        </sl-input>
+
+          <sl-select label="Select one" size="medium" required>
+            <sl-icon name="house" slot="prefix"></sl-icon>
+            <sl-option value="option-1">Option 1</sl-option>
+            <sl-option value="option-2">Option 2</sl-option>
+            <sl-option value="option-3">Option 3</sl-option>
+          </sl-select>
 
           <sl-textarea label="Feedback" help-text="Please tell us what you think." required> </sl-textarea>
 
@@ -126,6 +135,10 @@
             <sl-button type="submit" variant="primary">Submit</sl-button>
           </sl-button-group>
         </form>
+      </div>
+
+      <div>
+
       </div>
     </div>
   </body>

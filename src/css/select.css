@@ -1,0 +1,6 @@
+/*
+See selector `::part(combobox)` in input.css for styling of button.
+See selector `sl-option` in menu.css for styling of option.
+
+Background of dropdown is set by css var `--sl-panel-background-color`.
+*/

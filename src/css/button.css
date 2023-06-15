@@ -1,5 +1,4 @@
 sl-button::part(base) {
-  border-radius: var(--cs-border-radius-s);
   border: var(--cs-button-border);
   box-shadow: var(--cs-shadow-drop-s);
   font: var(--cs-type-sans-serif-s-tight-semibold);

@@ -4,6 +4,7 @@ sl-menu-label {
   padding: var(--cs-space-xs) var(--cs-space-xl);
 }
 
+sl-option,
 sl-menu-item {
   color: var(--cs-menu-item-color-foreground);
   font: var(--cs-type-sans-serif-s-tight);
