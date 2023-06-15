@@ -31,8 +31,7 @@
   --sl-input-color: var(--cs-input-color-foreground);
   --sl-input-color-hover: var(--cs-input-color-foreground);
   --sl-input-color-focus: var(--cs-input-color-foreground);
-
-  --sl-input-color-disabled: ;
+  --sl-input-color-disabled: var(--cs-input-color-foreground-disabled);
 
   --sl-input-help-text-color: var(--cs-input-color-label);
 
@@ -51,4 +50,8 @@
   --sl-input-background-color-hover: var(--cs-overlay-darker);
   --sl-input-background-color-focus: var(--cs-overlay-darker);
   --sl-input-background-color-disabled: var(--cs-overlay-darker);
+}
+
+[disabled] {
+  pointer-events: none;
 }

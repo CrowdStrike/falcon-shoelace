@@ -36,6 +36,12 @@ sl-textarea {
       box-shadow: var(--cs-input-shadow-invalid-focus);
     }
   }
+
+  &[disabled]::part(base),
+  &[disabled]::part(combobox) {
+    box-shadow: none;
+    opacity: 1;
+  }
 }
 
 sl-select {

@@ -17,8 +17,6 @@ sl-button::part(label) {
 }
 
 sl-button[variant][disabled] {
-  pointer-events: none;
-
   &::part(base) {
     background-color: var(--cs-overlay-dark);
     box-shadow: none;
