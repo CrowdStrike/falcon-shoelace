@@ -10,8 +10,4 @@ sl-radio-group {
     flex-direction: column;
     gap: var(--cs-space-xs);
   }
-
-  &::part(form-control-help-text) {
-    font: var(--cs-type-sans-serif-s);
-  }
 }
