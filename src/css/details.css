@@ -1,0 +1,20 @@
+sl-details {
+  &::part(base) {
+    border-bottom: var(--cs-details-border);
+    background-color: var(--cs-details-summary-color-background);
+    padding-inline: var(--cs-space-m);
+  }
+
+  &::part(summary) {
+    color: var(--cs-details-summary-color-foreground);
+    font: var(--cs-type-sans-serif-l-tight-semibold);
+    padding-block: var(--cs-space-m);
+  }
+
+  &::part(content) {
+    background-color: var(--cs-details-content-color-background);
+    color: var(--cs-details-content-color-foreground);
+    font: var(--cs-type-sans-serif-s);
+    padding-block-end: var(--cs-space-m);
+  }
+}

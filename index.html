@@ -17,14 +17,31 @@
     }
 
     #app {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
     }
   </style>
   <body>
     <h1>Shoelace</h1>
     <div id="app">
+      <div>
+        <sl-details summary="First" open>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </sl-details>
+
+        <sl-details summary="Second">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </sl-details>
+
+        <sl-details summary="Third">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </sl-details>
+      </div>
+
       <div>
         <sl-button variant="neutral">Neutral</sl-button>
         <sl-button variant="primary">Primary</sl-button>
@@ -170,10 +187,6 @@
             <sl-button type="submit" variant="primary">Submit</sl-button>
           </sl-button-group>
         </form>
-      </div>
-
-      <div>
-
       </div>
     </div>
   </body>
