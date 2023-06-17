@@ -1,0 +1,49 @@
+:root,
+:host {
+  --sl-shadow-large: var(--cs-shadow-drop-l);
+
+  --sl-panel-background-color: var(--cs-popover-color-background);
+
+  --sl-z-index-drawer: 700;
+  --sl-z-index-dialog: 800;
+  --sl-z-index-dropdown: 900;
+  --sl-z-index-toast: 950;
+  --sl-z-index-tooltip: 1000;
+
+  --sl-input-height-medium: 2rem;
+
+  --sl-input-border-radius-medium: var(--cs-border-radius-s);
+  --sl-input-border-width: 0;
+  --sl-input-border-color: transparent;
+  --sl-input-border-color-hover: transparent;
+  --sl-input-border-color-focus: transparent;
+  --sl-input-border-color-disabled: transparent;
+
+  --sl-input-color: var(--cs-input-color-foreground);
+  --sl-input-color: var(--cs-input-color-foreground);
+  --sl-input-color-hover: var(--cs-input-color-foreground);
+  --sl-input-color-focus: var(--cs-input-color-foreground);
+  --sl-input-color-disabled: var(--cs-input-color-foreground-disabled);
+
+  --sl-input-help-text-color: var(--cs-input-color-label);
+
+  --sl-input-label-color: var(--cs-input-color-label);
+
+  --sl-input-placeholder-color: var(--cs-input-color-placeholder);
+  --sl-input-placeholder-color-disabled: var(--cs-input-color-placeholder);
+
+  --sl-input-icon-color: var(--cs-input-color-label);
+  --sl-input-icon-color-hover: var(--cs-input-color-label);
+  --sl-input-icon-color-focus: var(--cs-input-color-label);
+
+  --sl-input-spacing-medium: var(--cs-space-s);
+
+  --sl-input-background-color: var(--cs-overlay-darker);
+  --sl-input-background-color-hover: var(--cs-overlay-darker);
+  --sl-input-background-color-focus: var(--cs-overlay-darker);
+  --sl-input-background-color-disabled: var(--cs-overlay-darker);
+}
+
+[disabled] {
+  pointer-events: none;
+}
