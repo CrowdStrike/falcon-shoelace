@@ -1,7 +1,7 @@
 sl-input,
 sl-textarea {
   &::part(input) {
-    padding: var(--cs-space-xs);
+    padding-inline: var(--cs-space-xs);
   }
 
   & [slot="prefix"] {
@@ -20,7 +20,10 @@ sl-textarea {
   &::part(base),
   &::part(combobox) {
     box-shadow: var(--cs-input-shadow);
-    font: var(--cs-type-sans-serif-s-tight);
+  }
+
+  &::part(input) {
+    font: var(--cs-type-sans-serif-s);
   }
 
   &::part(base):focus-within,
@@ -41,23 +44,6 @@ sl-textarea {
   &[disabled]::part(combobox) {
     box-shadow: none;
     opacity: 1;
-  }
-}
-
-sl-select {
-  &::part(combobox) {
-    padding: var(--cs-space-xs);
-  }
-
-  & [slot="prefix"] {
-    /*
-      Need to explicitly set this color.
-      I think this should use --sl-input-icon-color
-      rather than inheriting the placeholder color.
-      Possible bug?
-    */
-    color: var(--cs-input-color-label);
-    margin-inline-start: var(--cs-space-xxs);
   }
 }
 

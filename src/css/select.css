@@ -1,6 +1,50 @@
 /*
-See selector `::part(combobox)` in input.css for styling of button.
-See selector `sl-option` in menu.css for styling of option.
 
-Background of dropdown is set by css var `--sl-panel-background-color`.
+Notes:
+See selector `sl-option` in menu.css for styling of option.
+Background of dropdown is set by global css var `--sl-panel-background-color` in global.css
+
 */
+
+sl-select {
+  &::part(combobox) {
+    /* See selector `::part(combobox)` in input.css for styling of button states. */
+    padding-inline: var(--cs-space-xs);
+  }
+
+  &[multiple]::part(combobox) {
+    /* See selector `::part(combobox)` in input.css for styling of combobox states. */
+    padding-inline-start: var(--cs-space-xxs);
+  }
+
+  & [slot="prefix"] {
+    /*
+      Need to explicitly set this color.
+      I think this should use --sl-input-icon-color
+      rather than inheriting the placeholder color.
+      Possible bug?
+    */
+    color: var(--cs-input-color-label);
+    margin-inline-start: var(--cs-space-xxs);
+  }
+}
+
+sl-select {
+  &::part(tag) {
+    background-color: var(--cs-tag-color-background-neutral);
+    color: var(--cs-tag-color-foreground-neutral);
+  }
+
+  &::part(tag__base) {
+    border: 0;
+    padding-inline: var(--cs-space-xs);
+  }
+
+  &::part(tag__remove-button__base) {
+    margin-left: var(--cs-space-xs);
+  }
+
+  &::part(tag__content) {
+    padding: var(--cs-space-m);
+  }
+}
