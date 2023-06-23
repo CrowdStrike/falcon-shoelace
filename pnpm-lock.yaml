@@ -11,9 +11,9 @@ devDependencies:
   postcss-nesting:
     specifier: ^11.2.2
     version: 11.2.2(postcss@8.4.24)
-  toucan-styles:
-    specifier: link:../toucan-styles
-    version: link:../toucan-styles
+  falcon-styles:
+    specifier: link:../falcon-styles
+    version: link:../falcon-styles
   typescript:
     specifier: ^5.0.2
     version: 5.0.2
