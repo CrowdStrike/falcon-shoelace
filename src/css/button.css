@@ -13,7 +13,7 @@ sl-button::part(base) {
 
 sl-button::part(label) {
   font: var(--cs-type-sans-serif-s-tight-semibold);
-  line-height: var(--cs-button-height);
+  line-height: var(--cs-input-height);
   padding-inline: var(--cs-space-xs);
 }
 
