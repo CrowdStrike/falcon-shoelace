@@ -11,7 +11,7 @@ sl-radio::part(control) {
   height: 1rem;
   border: var(--cs-checkbox-border);
   background-color: var(--cs-checkbox-color-background);
-  border-radius: var(--cs-border-radius-circle);
+  border-radius: 100%;
 }
 
 sl-radio::part(control--checked) {
