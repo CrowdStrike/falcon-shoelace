@@ -1,7 +1,7 @@
 :root,
 :host {
   --sl-spacing-small: var(--cs-space-xs);
-
+  --sl-spacing-x-small: var(--cs-space-xxs);
   --sl-shadow-large: var(--cs-shadow-drop-l);
 
   --sl-panel-background-color: var(--cs-popover-color-background);
@@ -12,7 +12,9 @@
   --sl-z-index-toast: 950;
   --sl-z-index-tooltip: 1000;
 
+  --sl-input-height-small: 2rem;
   --sl-input-height-medium: 2rem;
+
   --sl-input-border-radius-medium: var(--cs-border-radius-s);
   --sl-input-border-width: 0;
   --sl-input-border-color: transparent;

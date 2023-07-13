@@ -28,13 +28,14 @@ sl-tab {
   }
 
   &::part(base) {
+    border: var(--cs-button-border);
     border-radius: var(--cs-border-radius-s) var(--cs-border-radius-s) 0 0;
     padding-block: var(--cs-space-xxs);
     padding-inline: var(--cs-space-m);
   }
 
   &::part(base):focus-visible {
-    background-image: var(--cs-button-background-image-focus);
+    border: var(--cs-button-border-focus);
     background-color: transparent;
     outline-offset: var(--cs-button-outline-offset-focus);
     outline: var(--cs-button-outline-focus);

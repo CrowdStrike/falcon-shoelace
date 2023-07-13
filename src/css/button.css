@@ -1,11 +1,13 @@
 sl-button::part(base) {
+  align-items: center;
   border: var(--cs-button-border);
   box-shadow: var(--cs-shadow-drop-s);
   padding-inline: var(--cs-space-xs);
+  height: 2rem;
 
   &:focus-visible {
-    background-image: var(--cs-button-background-image-focus);
     background-color: transparent;
+    border: var(--cs-button-border-focus);
     outline-offset: var(--cs-button-outline-offset-focus);
     outline: var(--cs-button-outline-focus);
   }
@@ -13,8 +15,7 @@ sl-button::part(base) {
 
 sl-button::part(label) {
   font: var(--cs-type-sans-serif-s-tight-semibold);
-  line-height: 2rem;
-  padding-inline: var(--cs-space-xs);
+  padding-inline: var(--cs-space-xxs);
 }
 
 sl-button[variant][disabled] {
@@ -29,6 +30,7 @@ sl-button[variant][disabled] {
 
 sl-button[variant="neutral"]::part(base) {
   box-shadow: none;
+  background-color: transparent;
 }
 
 sl-button[variant="primary"]::part(base) {
@@ -70,13 +72,12 @@ sl-button[variant="danger"]::part(base) {
 
   &:focus-visible {
     background-color: var(--cs-button-color-background-danger-hover);
-    background-image: var(--cs-button-background-image-danger-focus);
+    border: var(--cs-button-border-danger-focus);
     color: var(--cs-button-color-foreground-danger-hover);
   }
 
   &:active {
     background-color: var(--cs-button-color-background-danger-active);
-    background-image: none;
     color: var(--cs-button-color-foreground-danger-active);
   }
 }

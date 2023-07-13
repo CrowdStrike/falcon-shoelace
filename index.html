@@ -20,7 +20,50 @@
   </style>
   <body>
     <h1>Shoelace</h1>
+    <p><a target="_blank" href="https://shoelace.style">Shoelace</a></p>
     <div id="app">
+      <div>
+        <sl-breadcrumb>
+          <sl-breadcrumb-item>
+            <sl-icon slot="prefix" name="house"></sl-icon>
+            Home
+          </sl-breadcrumb-item>
+          <sl-breadcrumb-item>Articles</sl-breadcrumb-item>
+          <sl-breadcrumb-item>
+            Web Design
+            <sl-dropdown slot="suffix">
+              <sl-button slot="trigger" variant="neutral" circle>
+                <sl-icon label="More options" name="three-dots"></sl-icon>
+              </sl-button>
+              <sl-menu>
+                <sl-menu-item type="checkbox" checked>Web Design</sl-menu-item>
+                <sl-menu-item type="checkbox">Web Development</sl-menu-item>
+                <sl-menu-item type="checkbox">Marketing</sl-menu-item>
+              </sl-menu>
+            </sl-dropdown>
+          </sl-breadcrumb-item>
+          <sl-breadcrumb-item>Traveling</sl-breadcrumb-item>
+          <sl-breadcrumb-item>
+            Security
+            <sl-icon slot="suffix" name="shield-lock"></sl-icon>
+            <sl-icon slot="prefix" name="shield-lock"></sl-icon>
+          </sl-breadcrumb-item>
+
+          <sl-breadcrumb-item>
+            Web Design
+            <sl-dropdown slot="suffix">
+              <sl-button slot="trigger" variant="neutral" circle>
+                <sl-icon label="More options" name="three-dots"></sl-icon>
+              </sl-button>
+              <sl-menu>
+                <sl-menu-item type="checkbox" checked>Web Design</sl-menu-item>
+                <sl-menu-item type="checkbox">Web Development</sl-menu-item>
+                <sl-menu-item type="checkbox">Marketing</sl-menu-item>
+              </sl-menu>
+            </sl-dropdown>
+          </sl-breadcrumb-item>
+        </sl-breadcrumb>
+      </div>
       <div>
         <sl-tab-group>
           <sl-tab slot="nav" panel="general">General</sl-tab>
@@ -57,11 +100,16 @@
         <sl-button>Default</sl-button>
         <sl-button variant="danger">Danger</sl-button>
         <sl-button variant="text">Text</sl-button>
-        <sl-button variant="default">
-          <sl-icon slot="prefix" name="gear"></sl-icon>
-          <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
-          Icons!
+        <sl-button href="https://example.com" variant="default">
+          <sl-icon slot="prefix" name="incognito"></sl-icon>
+          Incognito
+          <sl-icon slot="suffix" name="incognito"></sl-icon>
         </sl-button>
+
+        <sl-button variant="default">
+          <sl-icon name="gear"></sl-icon>
+        </sl-button>
+
         <br />
         <br />
         <sl-button disabled variant="neutral">Neutral</sl-button>
@@ -71,8 +119,7 @@
         <sl-button disabled variant="text">Text</sl-button>
         <sl-button disabled>
           <sl-icon slot="prefix" name="gear"></sl-icon>
-          <sl-icon slot="suffix" name="box-arrow-up-right"></sl-icon>
-          Icons!
+          Settings
         </sl-button>
       </div>
 
@@ -165,8 +212,10 @@
       <div>
         <form style="display: flex; flex-direction: column; gap: 1rem;">
           <sl-input label="Name" help-text="Your preferred name" value="value">
+            <sl-icon name="chat" slot="suffix"></sl-icon>
+          </sl-input>
+          <sl-input label="Name" help-text="Your preferred name" value="value">
             <sl-icon name="house" slot="prefix"></sl-icon>
-            <sl-icon name="chat" slot="prefix"></sl-icon>
             <sl-icon name="chat" slot="suffix"></sl-icon>
           </sl-input>
 

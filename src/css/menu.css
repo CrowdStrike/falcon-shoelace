@@ -6,16 +6,17 @@ sl-menu-label {
 
 sl-option,
 sl-menu-item {
+  border: var(--cs-button-border);
   color: var(--cs-menu-item-color-foreground);
   font: var(--cs-type-sans-serif-s-tight);
-  padding: var(--cs-space-xs) var(--cs-space-xxs);
+  padding: var(--cs-space-xxs);
 
   &:hover {
     background-color: var(--cs-overlay-dark);
   }
 
   &:focus-visible {
-    background-image: var(--cs-button-background-image-focus);
+    border: var(--cs-button-border-focus);
   }
 
   & [slot="prefix"] {
