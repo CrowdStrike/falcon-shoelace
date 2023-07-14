@@ -1,0 +1,10 @@
+/* see css vars in global.css for most styling */
+sl-tooltip {
+  &::part(base__popup) {
+    box-shadow: var(--cs-shadow-drop-s);
+  }
+
+  &::part(base__arrow) {
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.125);
+  }
+}

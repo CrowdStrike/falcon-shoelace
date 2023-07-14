@@ -4,6 +4,12 @@
   --sl-spacing-x-small: var(--cs-space-xxs);
   --sl-shadow-large: var(--cs-shadow-drop-l);
 
+  --sl-tooltip-arrow-size: var(--cs-space-xs);
+  --sl-tooltip-background-color: var(--cs-tooltip-color-background);
+  --sl-tooltip-border-radius: var(--cs-border-radius-s);
+  --sl-tooltip-color: var(--cs-tooltip-color-foreground);
+  --sl-tooltip-padding: var(--cs-space-xs) var(--cs-space-s);
+
   --sl-panel-background-color: var(--cs-popover-color-background);
 
   --sl-z-index-drawer: 700;
