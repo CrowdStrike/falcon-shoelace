@@ -7,12 +7,6 @@
 
   --sl-panel-background-color: var(--cs-popover-color-background);
 
-  --sl-z-index-drawer: 700;
-  --sl-z-index-dialog: 800;
-  --sl-z-index-dropdown: 900;
-  --sl-z-index-toast: 950;
-  --sl-z-index-tooltip: 1000;
-
   --sl-transition-fast: var(--cs-transition-duration-fast);
 }
 
