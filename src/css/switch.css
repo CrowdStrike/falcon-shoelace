@@ -1,0 +1,19 @@
+sl-switch {
+  --thumb-size: 0.8rem;
+  --width: 1.875rem;
+  --height: 1rem;
+  --sl-color-neutral-400: var(--cs-switch-control-color-background);
+  --sl-color-primary-600: var(--cs-switch-control-color-background-checked);
+  --sl-color-neutral-0: var(--cs-switch-thumb-color-background);
+  --sl-focus-ring: var(--cs-button-border-focus);
+  --sl-focus-ring-offset: 3px;
+
+  &::part(control) {
+    box-shadow: var(--cs-shadow-inner-m);
+
+  }
+
+  &:focus-visible {
+    outline: var(--cs-button-border-focus);
+  }
+}
