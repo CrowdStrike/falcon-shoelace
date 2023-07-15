@@ -1,4 +1,12 @@
-/* see css vars in global.css for most styling */
+:root,
+:host {
+  --sl-tooltip-arrow-size: var(--cs-space-xs);
+  --sl-tooltip-background-color: var(--cs-tooltip-color-background);
+  --sl-tooltip-border-radius: var(--cs-border-radius-s);
+  --sl-tooltip-color: var(--cs-tooltip-color-foreground);
+  --sl-tooltip-padding: var(--cs-space-xs) var(--cs-space-s);
+}
+
 sl-tooltip {
   &::part(base__popup) {
     box-shadow: var(--cs-shadow-drop-s);

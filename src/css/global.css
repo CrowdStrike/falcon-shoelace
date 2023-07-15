@@ -2,13 +2,8 @@
 :host {
   --sl-spacing-small: var(--cs-space-xs);
   --sl-spacing-x-small: var(--cs-space-xxs);
-  --sl-shadow-large: var(--cs-shadow-drop-l);
 
-  --sl-tooltip-arrow-size: var(--cs-space-xs);
-  --sl-tooltip-background-color: var(--cs-tooltip-color-background);
-  --sl-tooltip-border-radius: var(--cs-border-radius-s);
-  --sl-tooltip-color: var(--cs-tooltip-color-foreground);
-  --sl-tooltip-padding: var(--cs-space-xs) var(--cs-space-s);
+  --sl-shadow-large: var(--cs-shadow-drop-l);
 
   --sl-panel-background-color: var(--cs-popover-color-background);
 
