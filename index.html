@@ -27,6 +27,91 @@
     <br>
     <div id="app">
       <div>
+        <div class="alert-toast-wrapper">
+          <sl-button variant="primary">Create Toast</sl-button>
+        </div>
+
+        <script>
+          const container = document.querySelector('.alert-toast-wrapper');
+          const button = container.querySelector('sl-button');
+          let count = 0;
+
+          // Always escape HTML for text arguments!
+          function escapeHtml(html) {
+            const div = document.createElement('div');
+            div.textContent = html;
+            return div.innerHTML;
+          }
+
+          // Custom function to emit toast notifications
+          function notify(message, variant = 'primary', icon = 'info-circle', duration = 'Infinity') {
+            const alert = Object.assign(document.createElement('sl-alert'), {
+              variant,
+              closable: true,
+              duration: duration,
+              innerHTML: `
+                <sl-icon name="${icon}" slot="icon"></sl-icon>
+                ${escapeHtml(message)}
+              `
+            });
+
+            alert.style.position = 'fixed';
+            alert.style.left = 0;
+            alert.style.right = 'auto';
+
+
+
+            document.body.append(alert);
+            return alert.toast();
+          }
+
+          button.addEventListener('click', () => {
+            notify(`This is custom toast #${++count}`);
+          });
+        </script>
+
+      </div>
+      <div>
+        <sl-alert variant="primary" open closable>
+          <sl-icon slot="icon" name="info-circle"></sl-icon>
+          <strong>This is super informative</strong><br />
+          You can tell by how pretty the alert is.
+        </sl-alert>
+
+        <br />
+
+        <sl-alert variant="success" open>
+          <sl-icon slot="icon" name="check2-circle"></sl-icon>
+          <strong>Your changes have been saved</strong><br />
+          You can safely exit the app now.
+        </sl-alert>
+
+        <br />
+
+        <sl-alert variant="neutral" open>
+          <sl-icon slot="icon" name="gear"></sl-icon>
+          <strong>Your settings have been updated</strong><br />
+          Settings will take affect on next login.
+        </sl-alert>
+
+        <br />
+
+        <sl-alert variant="warning" open>
+          <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+          <strong>Your session has ended</strong><br />
+          Please login again to continue.
+        </sl-alert>
+
+        <br />
+
+        <sl-alert variant="danger" open>
+          <sl-icon slot="icon" name="exclamation-octagon"></sl-icon>
+          <strong>Your account has been deleted</strong><br />
+          We're very sorry to see you go!
+        </sl-alert>
+
+      </div>
+      <div>
         <sl-dialog label="Dialog" class="dialog">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <sl-button slot="footer" variant="primary">Close</sl-button>
