@@ -27,13 +27,25 @@
     <br>
     <div id="app">
       <div>
-        <sl-switch>Switch</sl-switch>
-        <sl-switch disabled>Switch</sl-switch>
+        <sl-dialog label="Dialog" class="dialog">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <sl-button slot="footer" variant="primary">Close</sl-button>
+        </sl-dialog>
+
+        <sl-button>Open Dialog</sl-button>
+
+        <script>
+          const dialog = document.querySelector('.dialog');
+          const openButton = dialog.nextElementSibling;
+          const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+          openButton.addEventListener('click', () => dialog.show());
+          closeButton.addEventListener('click', () => dialog.hide());
+        </script>
       </div>
       <div>
-        <sl-spinner></sl-spinner>
-        <sl-spinner style="font-size: 2rem;"></sl-spinner>
-        <sl-spinner style="font-size: 3rem;"></sl-spinner>
+        <sl-switch>Switch</sl-switch>
+        <sl-switch disabled>Switch</sl-switch>
       </div>
       <div>
         <sl-tooltip content="This is a tooltip">
@@ -271,6 +283,11 @@
           <sl-option value="option-2">Option 2</sl-option>
           <sl-option value="option-3">Option 3</sl-option>
         </sl-select>
+      </div>
+      <div>
+        <sl-spinner></sl-spinner>
+        <sl-spinner style="font-size: 2rem;"></sl-spinner>
+        <sl-spinner style="font-size: 3rem;"></sl-spinner>
       </div>
     </div>
   </body>

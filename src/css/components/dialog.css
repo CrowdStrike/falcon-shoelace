@@ -1,0 +1,25 @@
+sl-dialog {
+  --spacing: var(--cs-space-m);
+  --header-spacing: var(--spacing);
+  --body-spacing: var(--spacing);
+  --footer-spacing: var(--spacing);
+
+  &::part(overlay) {
+    background-color: var(--cs-overlay-darkest);
+  }
+
+  &::part(panel) {
+    box-shadow: var(--cs-shadow-drop-2xl);
+  }
+
+  &::part(title) {
+    font: var(--cs-type-sans-serif-l);
+  }
+
+  &::part(header-actions) {
+    --font-size: var(--cs-font-size-xl);
+    --sl-font-size-medium: var(--font-size);
+
+    font: var(--cs-type-sans-serif-l);
+  }
+}
