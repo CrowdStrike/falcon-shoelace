@@ -8,6 +8,8 @@
   --sl-panel-background-color: var(--cs-popover-color-background);
 
   --sl-transition-fast: var(--cs-transition-duration-fast);
+
+  --sl-font-size-medium: var(--cs-font-size-m);
 }
 
 [disabled] {

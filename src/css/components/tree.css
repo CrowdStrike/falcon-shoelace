@@ -1,0 +1,35 @@
+sl-tree {
+  --indent-size: 1rem;
+  --indent-guide-color: var(--cs-checkbox-color-background);
+  --indent-guide-offset: 0;
+  --indent-guide-width: 1px;
+}
+
+sl-tree-item {
+  --sl-focus-ring: var(--cs-checkbox-outline-focus);
+  --sl-focus-ring-offset: var(--cs-checkbox-outline-offset-focus);
+
+  &::part(checkbox__control) {
+    width: 1rem;
+    height: 1rem;
+    border: var(--cs-checkbox-border);
+    background-color: var(--cs-checkbox-color-background);
+    border-radius: var(--cs-border-radius-s);
+    padding: 1px;
+  }
+
+  &::part(checkbox__control--indeterminate),
+  &::part(checkbox__control--checked) {
+    background-color: var(--cs-checkbox-color-background-checked);
+    border-color: transparent;
+    color: var(--cs-checkbox-color-foreground-checked);
+  }
+
+  &::part(item) {
+    padding: 0.25rem;
+  }
+
+  &::part(item--selected) {
+    background-color: #efefef;
+  }
+}
