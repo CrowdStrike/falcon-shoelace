@@ -29,6 +29,7 @@
 sl-input,
 sl-textarea {
   &::part(input) {
+    background-color: transparent;
     padding-inline: var(--cs-space-xs);
   }
 
