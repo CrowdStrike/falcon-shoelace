@@ -1,14 +1,12 @@
 :root,
 :host {
-  --sl-spacing-small: var(--cs-space-xs);
-  --sl-spacing-x-small: var(--cs-space-xxs);
-
   --sl-shadow-large: var(--cs-shadow-drop-l);
 
   --sl-panel-background-color: var(--cs-popover-color-background);
 
   --sl-transition-fast: var(--cs-transition-duration-fast);
 
+  --sl-font-size-small: var(--cs-font-size-s);
   --sl-font-size-medium: var(--cs-font-size-m);
 }
 

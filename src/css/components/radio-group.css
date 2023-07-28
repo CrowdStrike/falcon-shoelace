@@ -2,7 +2,7 @@ sl-radio-group {
   &::part(form-control) {
     display: flex;
     flex-direction: column;
-    gap: var(--cs-space-s);
+    gap: var(--cs-space-xxs);
   }
 
   &::part(form-control-input) {

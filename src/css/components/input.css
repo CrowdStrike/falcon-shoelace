@@ -26,20 +26,8 @@
   --sl-input-background-color-disabled: var(--cs-overlay-darker);
 }
 
-sl-input,
-sl-textarea {
-  &::part(input) {
-    background-color: transparent;
-    padding-inline: var(--cs-space-xs);
-  }
-
-  & [slot="prefix"] {
-    margin-inline-start: var(--cs-space-s);
-  }
-
-  & [slot="suffix"] {
-    margin-inline-end: var(--cs-space-s);
-  }
+sl-input::part(input) {
+  background-color: transparent;
 }
 
 sl-input,

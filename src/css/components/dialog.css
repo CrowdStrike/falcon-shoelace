@@ -1,9 +1,4 @@
 sl-dialog {
-  --spacing: var(--cs-space-m);
-  --header-spacing: var(--spacing);
-  --body-spacing: var(--spacing);
-  --footer-spacing: var(--spacing);
-
   &::part(overlay) {
     background-color: var(--cs-overlay-darkest);
   }

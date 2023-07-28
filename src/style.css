@@ -2,6 +2,7 @@
 
 @import './css/global.css';
 @import './css/z-index.css';
+@import './css/spacing.css';
 
 @import './css/components/button.css';
 @import './css/components/button-group.css';

@@ -1,9 +1,4 @@
 sl-drawer {
-  --size: '';
-  --header-spacing: var(--cs-space-m);
-  --body-spacing: var(--cs-space-m);
-  --footer-spacing: var(--cs-space-m);
-
   &::part(overlay) {
     background-color: var(--cs-overlay-darkest);
   }

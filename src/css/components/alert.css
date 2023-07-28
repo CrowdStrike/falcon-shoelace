@@ -8,8 +8,6 @@ sl-alert {
     border-left: 3px solid;
     border-radius: var(--cs-border-radius-s);
     box-shadow: var(--cs-shadow-drop-l);
-    gap: var(--cs-space-m);
-    padding: var(--cs-space-m) var(--cs-space-l);
   }
 
   &[variant="primary"] {

@@ -31,7 +31,6 @@ sl-tab {
     border: var(--cs-button-border);
     border-radius: var(--cs-border-radius-s) var(--cs-border-radius-s) 0 0;
     padding-block: var(--cs-space-xxs);
-    padding-inline: var(--cs-space-m);
   }
 
   &::part(base):focus-visible {

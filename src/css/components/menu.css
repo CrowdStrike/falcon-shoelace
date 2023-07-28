@@ -1,7 +1,6 @@
 sl-menu-label {
   color: var(--cs-menu-label-color-foreground);
   font: var(--cs-type-sans-serif-s);
-  padding: var(--cs-space-xs) var(--cs-space-xl);
 }
 
 sl-option,
@@ -9,7 +8,6 @@ sl-menu-item {
   border: var(--cs-button-border);
   color: var(--cs-menu-item-color-foreground);
   font: var(--cs-type-sans-serif-s-tight);
-  padding: var(--cs-space-xxs);
 
   &:hover {
     background-color: var(--cs-overlay-dark);
@@ -17,9 +15,5 @@ sl-menu-item {
 
   &:focus-visible {
     border: var(--cs-button-border-focus);
-  }
-
-  & [slot="prefix"] {
-    margin-inline-end: var(--cs-space-xs);
   }
 }

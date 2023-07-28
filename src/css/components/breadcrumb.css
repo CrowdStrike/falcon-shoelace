@@ -1,13 +1,3 @@
-sl-breadcrumb-item {
-  & [slot="prefix"] {
-    margin-inline-end: var(--cs-space-xxs);
-  }
-
-  & [slot="suffix"] {
-    margin-inline-start: var(--cs-space-xxs);
-  }
-}
-
 sl-breadcrumb-item::part(base) {
   color: var(--cs-link-foreground);
   text-decoration: var(--cs-text-decoration-underline);
@@ -24,8 +14,4 @@ sl-breadcrumb-item::part(base) {
 sl-breadcrumb-item::part(label):focus-visible {
   outline: var(--cs-button-border-focus);
   outline-offset: 2px;
-}
-
-sl-breadcrumb-item::part(separator) {
-  margin-inline: var(--cs-space-xxs);
 }

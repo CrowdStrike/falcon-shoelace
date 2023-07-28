@@ -5,8 +5,6 @@ sl-details {
   }
 
   &::part(header) {
-    padding: var(--cs-space-m);
-
     &:focus-visible {
       box-shadow: var(--cs-input-shadow-focus);
     }
@@ -21,8 +19,5 @@ sl-details {
     background-color: var(--cs-details-content-color-background);
     color: var(--cs-details-content-color-foreground);
     font: var(--cs-type-sans-serif-s);
-    padding-block-start: var(--cs-space-s);
-    padding-block-end: var(--cs-space-m);
-    padding-inline: var(--cs-space-m);
   }
 }

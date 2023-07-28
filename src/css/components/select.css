@@ -7,16 +7,6 @@ Background of dropdown is set by global css var `--sl-panel-background-color` in
 */
 
 sl-select {
-  &::part(combobox) {
-    /* See selector `::part(combobox)` in input.css for styling of button states. */
-    padding-inline: var(--cs-space-xs);
-  }
-
-  &[multiple]::part(combobox) {
-    /* See selector `::part(combobox)` in input.css for styling of combobox states. */
-    padding-inline-start: var(--cs-space-xxs);
-  }
-
   & [slot="prefix"] {
     /*
       Need to explicitly set this color.
@@ -25,26 +15,17 @@ sl-select {
       Possible bug?
     */
     color: var(--cs-input-color-label);
-    margin-inline-start: var(--cs-space-xxs);
   }
 }
 
 sl-select {
-  &::part(tag) {
+  &::part(tag__base) {
     background-color: var(--cs-tag-color-background-neutral);
     color: var(--cs-tag-color-foreground-neutral);
-  }
-
-  &::part(tag__base) {
     border: 0;
-    padding-inline: var(--cs-space-xs);
   }
 
   &::part(tag__remove-button__base) {
     margin-left: var(--cs-space-xs);
-  }
-
-  &::part(tag__content) {
-    padding: var(--cs-space-m);
   }
 }

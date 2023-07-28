@@ -1,0 +1,12 @@
+:root, :host {
+  --sl-spacing-3x-small: var(--cs-space-xxs);
+  --sl-spacing-2x-small: var(--cs-space-xxs);
+  --sl-spacing-x-small: var(--cs-space-xxs);
+  --sl-spacing-small: var(--cs-space-xs);
+  --sl-spacing-medium: var(--cs-space-s);
+  --sl-spacing-large: var(--cs-space-m);
+  --sl-spacing-x-large: var(--cs-space-l);
+  --sl-spacing-2x-large: var(--cs-space-xl);
+  --sl-spacing-3x-large: var(--cs-space-2xl);
+  --sl-spacing-4x-large: var(--cs-space-3xl);
+}
