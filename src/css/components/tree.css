@@ -30,6 +30,6 @@ sl-tree-item {
   }
 
   &::part(item--selected) {
-    background-color: #efefef;
+    border-inline-start-color: var(--cs-checkbox-color-background-checked);
   }
 }
