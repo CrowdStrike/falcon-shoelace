@@ -1,6 +1,8 @@
 sl-menu-label {
+  border: var(--cs-button-border);
   color: var(--cs-menu-label-color-foreground);
   font: var(--cs-type-sans-serif-s);
+  padding: var(--sl-spacing-2x-small) var(--sl-spacing-2x-small);
 }
 
 sl-option,
