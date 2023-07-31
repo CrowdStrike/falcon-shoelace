@@ -11,7 +11,7 @@ sl-tab-group {
   }
 
   &::part(body) {
-    padding: var(--cs-space-m);
+    padding: var(--cs-space-x4);
   }
 }
 
@@ -30,7 +30,7 @@ sl-tab {
   &::part(base) {
     border: var(--cs-button-border);
     border-radius: var(--cs-border-radius-s) var(--cs-border-radius-s) 0 0;
-    padding-block: var(--cs-space-xxs);
+    padding-block: var(--cs-space-x1);
   }
 
   &::part(base):focus-visible {

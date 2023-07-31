@@ -74,6 +74,6 @@ sl-alert {
   max-height: 100%;
 
   & sl-alert::part(base) {
-    margin: var(--cs-space-m);
+    margin: var(--cs-space-x4);
   }
 }

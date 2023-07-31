@@ -19,7 +19,7 @@
   --sl-input-icon-color: var(--cs-input-color-label);
   --sl-input-icon-color-hover: var(--cs-input-color-label);
   --sl-input-icon-color-focus: var(--cs-input-color-label);
-  --sl-input-spacing-medium: var(--cs-space-s);
+  --sl-input-spacing-medium: var(--cs-space-x3);
   --sl-input-background-color: var(--cs-overlay-darker);
   --sl-input-background-color-hover: var(--cs-overlay-darker);
   --sl-input-background-color-focus: var(--cs-overlay-darker);

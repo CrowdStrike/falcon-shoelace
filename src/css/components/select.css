@@ -26,6 +26,6 @@ sl-select {
   }
 
   &::part(tag__remove-button__base) {
-    margin-left: var(--cs-space-xs);
+    margin-left: var(--cs-space-x2);
   }
 }

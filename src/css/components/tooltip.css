@@ -1,10 +1,10 @@
 :root,
 :host {
-  --sl-tooltip-arrow-size: var(--cs-space-xs);
+  --sl-tooltip-arrow-size: var(--cs-space-x2);
   --sl-tooltip-background-color: var(--cs-tooltip-color-background);
   --sl-tooltip-border-radius: var(--cs-border-radius-s);
   --sl-tooltip-color: var(--cs-tooltip-color-foreground);
-  --sl-tooltip-padding: var(--cs-space-xs) var(--cs-space-s);
+  --sl-tooltip-padding: var(--cs-space-x2) var(--cs-space-x3);
 }
 
 sl-tooltip {
