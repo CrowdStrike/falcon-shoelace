@@ -1,15 +1,10 @@
 sl-button-group {
   &::part(base) {
-    box-shadow: var(--cs-shadow-drop-s);
     border-radius: var(--cs-border-radius-s);
     gap: 1px;
   }
 
   & sl-button {
     flex: 1;
-  }
-
-  & sl-button::part(base) {
-    box-shadow: none;
   }
 }

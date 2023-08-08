@@ -1,7 +1,6 @@
 sl-button::part(base) {
   align-items: center;
   border: var(--cs-button-border);
-  box-shadow: var(--cs-shadow-drop-s);
   height: 2rem;
 
   &:focus-visible {
@@ -20,7 +19,6 @@ sl-button::part(label) {
 sl-button[variant][disabled] {
   &::part(base) {
     background-color: var(--cs-overlay-dark);
-    box-shadow: none;
     color: var(--cs-button-color-foreground-disabled);
     opacity: 1;
     text-decoration: none;
@@ -57,13 +55,7 @@ sl-button[variant="default"]::part(base) {
 }
 
 sl-button[variant="neutral"]::part(base) {
-  box-shadow: none;
   background-color: transparent;
-
-  &:hover,
-  &:focus-visible {
-    box-shadow: var(--cs-shadow-drop-s);
-  }
 }
 
 sl-button[variant="danger"]::part(base) {
@@ -88,7 +80,6 @@ sl-button[variant="danger"]::part(base) {
 }
 
 sl-button[variant="text"]::part(base) {
-  box-shadow: none;
   color: var(--cs-button-color-foreground-link);
   text-decoration: underline;
 
