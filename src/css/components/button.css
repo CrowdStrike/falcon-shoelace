@@ -27,11 +27,6 @@ sl-button[variant][disabled] {
   }
 }
 
-sl-button[variant="neutral"]::part(base) {
-  box-shadow: none;
-  background-color: transparent;
-}
-
 sl-button[variant="primary"]::part(base) {
   background-color: var(--cs-button-color-background-primary);
   color: var(--cs-button-color-foreground-primary);
@@ -46,6 +41,7 @@ sl-button[variant="primary"]::part(base) {
   }
 }
 
+sl-button[variant="neutral"]::part(base),
 sl-button[variant="default"]::part(base) {
   background-color: var(--cs-button-color-background-secondary);
   color: var(--cs-button-color-foreground-secondary);
@@ -57,6 +53,16 @@ sl-button[variant="default"]::part(base) {
 
   &:active {
     background-color: var(--cs-button-color-background-secondary-active);
+  }
+}
+
+sl-button[variant="neutral"]::part(base) {
+  box-shadow: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: var(--cs-shadow-drop-s);
   }
 }
 
