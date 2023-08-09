@@ -1,14 +1,11 @@
 sl-details {
+  --sl-focus-ring-offset: var(--cs-focus-ring-inset);
+
   &::part(base) {
     border-bottom: var(--cs-details-border);
     background-color: var(--cs-details-summary-color-background);
   }
 
-  &::part(header) {
-    &:focus-visible {
-      box-shadow: var(--cs-input-shadow-focus);
-    }
-  }
 
   &::part(summary) {
     color: var(--cs-details-summary-color-foreground);

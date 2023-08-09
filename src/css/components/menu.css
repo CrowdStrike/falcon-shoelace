@@ -1,5 +1,4 @@
 sl-menu-label {
-  border: var(--cs-button-border);
   color: var(--cs-menu-label-color-foreground);
   font: var(--cs-type-sans-serif-s);
   padding: var(--sl-spacing-2x-small) var(--sl-spacing-2x-small);
@@ -7,7 +6,6 @@ sl-menu-label {
 
 sl-option,
 sl-menu-item {
-  border: var(--cs-button-border);
   color: var(--cs-menu-item-color-foreground);
   font: var(--cs-type-sans-serif-s-tight);
 
@@ -16,6 +14,7 @@ sl-menu-item {
   }
 
   &:focus-visible {
-    border: var(--cs-button-border-focus);
+    outline: var(--cs-focus-ring);
+    outline-offset: var(--cs-focus-ring-inset);
   }
 }

@@ -28,15 +28,12 @@ sl-tab {
   }
 
   &::part(base) {
-    border: var(--cs-button-border);
     border-radius: var(--cs-border-radius-s) var(--cs-border-radius-s) 0 0;
     padding-block: var(--cs-space-x1);
   }
 
   &::part(base):focus-visible {
-    border: var(--cs-button-border-focus);
     background-color: transparent;
-    outline-offset: var(--cs-button-outline-offset-focus);
-    outline: var(--cs-button-outline-focus);
+    outline-offset: var(--cs-focus-ring-inset);
   }
 }

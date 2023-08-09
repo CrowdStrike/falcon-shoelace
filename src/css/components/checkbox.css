@@ -1,7 +1,4 @@
 sl-checkbox {
-  --sl-focus-ring: var(--cs-checkbox-outline-focus);
-  --sl-focus-ring-offset: var(--cs-checkbox-outline-offset-focus);
-
   &::part(base) {
     display: inline-flex;
     align-items: center;

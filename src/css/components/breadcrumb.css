@@ -10,8 +10,3 @@ sl-breadcrumb-item::part(base) {
     color: var(--cs-link-foreground-active);
   }
 }
-
-sl-breadcrumb-item::part(label):focus-visible {
-  outline: var(--cs-button-border-focus);
-  outline-offset: 2px;
-}

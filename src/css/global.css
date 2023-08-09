@@ -8,6 +8,12 @@
 
   --sl-font-size-small: var(--cs-font-size-s);
   --sl-font-size-medium: var(--cs-font-size-m);
+
+  --sl-focus-ring-color: var(--cs-focus-ring-color);
+  --sl-focus-ring-style: var(--cs-focus-ring-style);
+  --sl-focus-ring-width:  var(--cs-focus-ring-width);
+  --sl-focus-ring-offset: var(--cs-focus-ring-offset);
+  --sl-focus-ring: var(--cs-focus-ring);
 }
 
 [disabled] {

@@ -1,15 +1,6 @@
 sl-button::part(base) {
   align-items: center;
-  border: var(--cs-button-border);
   height: 2rem;
-
-  &:focus-visible {
-    background-color: transparent;
-    border: var(--cs-button-border-focus);
-    outline-offset: var(--cs-button-outline-offset-focus);
-    outline: var(--cs-button-outline-focus);
-  }
-
 }
 
 sl-button::part(label) {
@@ -22,6 +13,7 @@ sl-button[variant][disabled] {
     color: var(--cs-button-color-foreground-disabled);
     opacity: 1;
     text-decoration: none;
+    border-color: transparent;
   }
 }
 
@@ -56,6 +48,7 @@ sl-button[variant="default"]::part(base) {
 
 sl-button[variant="neutral"]::part(base) {
   background-color: transparent;
+  border: 1px solid lightgray;
 }
 
 sl-button[variant="danger"]::part(base) {
@@ -69,7 +62,6 @@ sl-button[variant="danger"]::part(base) {
 
   &:focus-visible {
     background-color: var(--cs-button-color-background-danger-hover);
-    border: var(--cs-button-border-danger-focus);
     color: var(--cs-button-color-foreground-danger-hover);
   }
 
