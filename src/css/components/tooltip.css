@@ -1,15 +1,15 @@
 :root,
 :host {
   --sl-tooltip-arrow-size: var(--cs-space-x2);
-  --sl-tooltip-background-color: var(--cs-tooltip-color-background);
+  --sl-tooltip-background-color: var(--cs-tooltip-background);
   --sl-tooltip-border-radius: var(--cs-border-radius-s);
-  --sl-tooltip-color: var(--cs-tooltip-color-foreground);
+  --sl-tooltip-color: var(--cs-tooltip-color);
   --sl-tooltip-padding: var(--cs-space-x2) var(--cs-space-x3);
 }
 
 sl-tooltip {
   &::part(base__popup) {
-    box-shadow: var(--cs-shadow-drop-s);
+    box-shadow: var(--cs-drop-shadow-s);
   }
 
   &::part(base__arrow) {

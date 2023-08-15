@@ -7,59 +7,59 @@ sl-alert {
   &::part(base) {
     border-left: 3px solid;
     border-radius: var(--cs-border-radius-s);
-    box-shadow: var(--cs-shadow-drop-l);
+    box-shadow: var(--cs-drop-shadow-l);
   }
 
   &[variant="primary"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-info);
+      border-color: var(--cs-color-info);
     }
 
     &::part(icon) {
-      color: var(--cs-color-alert-info);
+      color: var(--cs-color-info);
     }
   }
 
   &[variant="success"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-success);
+      border-color: var(--cs-color-success);
     }
 
     &::part(icon) {
-      color: var(--cs-color-alert-success);
+      color: var(--cs-color-success);
     }
   }
 
   &[variant="neutral"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-neutral);
+      border-color: var(--cs-color-neutral);
 
     }
 
     &::part(icon) {
-      color: var(--cs-color-alert-neutral);
+      color: var(--cs-color-neutral);
     }
   }
 
 
   &[variant="warning"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-warning);
+      border-color: var(--cs-color-warning);
     }
 
     &::part(icon) {
-      color: var(--cs-color-alert-warning);
+      color: var(--cs-color-warning);
     }
   }
 
   &[variant="danger"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-danger);
+      border-color: var(--cs-color-danger);
 
     }
 
     &::part(icon) {
-      color: var(--cs-color-alert-danger);
+      color: var(--cs-color-danger);
     }
   }
 }

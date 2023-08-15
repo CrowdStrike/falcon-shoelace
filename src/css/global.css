@@ -1,8 +1,8 @@
 :root,
 :host {
-  --sl-shadow-large: var(--cs-shadow-drop-l);
+  --sl-shadow-large: var(--cs-drop-shadow-l);
 
-  --sl-panel-background-color: var(--cs-popover-color-background);
+  --sl-panel-background-color: var(--cs-popover-background);
 
   --sl-transition-fast: var(--cs-transition-duration-fast);
 

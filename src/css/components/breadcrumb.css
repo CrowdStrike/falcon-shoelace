@@ -1,12 +1,12 @@
 sl-breadcrumb-item::part(base) {
-  color: var(--cs-link-foreground);
+  color: var(--cs-link-color);
   text-decoration: var(--cs-text-decoration-underline);
 
   &:hover {
-    color: var(--cs-link-foreground-hover);
+    color: var(--cs-link-color-hover);
   }
 
   &:active {
-    color: var(--cs-link-foreground-active);
+    color: var(--cs-link-color-active);
   }
 }

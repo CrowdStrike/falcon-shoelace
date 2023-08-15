@@ -1,12 +1,12 @@
 sl-menu-label {
-  color: var(--cs-menu-label-color-foreground);
+  color: var(--cs-menu-label-color);
   font: var(--cs-type-sans-serif-s);
   padding: var(--sl-spacing-2x-small) var(--sl-spacing-2x-small);
 }
 
 sl-option,
 sl-menu-item {
-  color: var(--cs-menu-item-color-foreground);
+  color: var(--cs-menu-item-color);
   font: var(--cs-type-sans-serif-s-tight);
 
   &:hover {

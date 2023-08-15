@@ -4,7 +4,7 @@ sl-drawer {
   }
 
   &::part(panel) {
-    box-shadow: var(--cs-shadow-drop-xl);
+    box-shadow: var(--cs-drop-shadow-xl);
   }
 
   &::part(title) {

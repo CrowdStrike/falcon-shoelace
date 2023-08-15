@@ -14,14 +14,14 @@ sl-select {
       rather than inheriting the placeholder color.
       Possible bug?
     */
-    color: var(--cs-input-color-label);
+    color: var(--cs-input-label-color);
   }
 }
 
 sl-select {
   &::part(tag__base) {
-    background-color: var(--cs-tag-color-background-neutral);
-    color: var(--cs-tag-color-foreground-neutral);
+    background-color: var(--cs-tag-neutral-background);
+    color: var(--cs-tag-neutral-color);
     border: 0;
   }
 

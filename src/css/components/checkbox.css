@@ -8,15 +8,15 @@ sl-checkbox {
     width: 1rem;
     height: 1rem;
     border: var(--cs-checkbox-border);
-    background-color: var(--cs-checkbox-color-background);
+    background-color: var(--cs-checkbox-background);
     border-radius: var(--cs-border-radius-s);
     padding: 1px;
   }
 
   &::part(control--checked) {
-    background-color: var(--cs-checkbox-color-background-checked);
+    background-color: var(--cs-checkbox-background-checked);
     border-color: transparent;
-    color: var(--cs-checkbox-color-foreground-checked);
+    color: var(--cs-checkbox-checked);
   }
 }
 

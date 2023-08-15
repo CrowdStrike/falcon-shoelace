@@ -1,4 +1,4 @@
 sl-spinner {
-  --indicator-color: var(--cs-color-foreground-default);
+  --indicator-color: var(--cs-color-default);
   --track-width: 2px;
 }

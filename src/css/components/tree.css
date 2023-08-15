@@ -1,6 +1,6 @@
 sl-tree {
   --indent-size: 1rem;
-  --indent-guide-color: var(--cs-checkbox-color-background);
+  --indent-guide-color: var(--cs-checkbox-background);
   --indent-guide-offset: 0;
   --indent-guide-width: 1px;
 }
@@ -10,16 +10,16 @@ sl-tree-item {
     width: 1rem;
     height: 1rem;
     border: var(--cs-checkbox-border);
-    background-color: var(--cs-checkbox-color-background);
+    background-color: var(--cs-checkbox-background);
     border-radius: var(--cs-border-radius-s);
     padding: 1px;
   }
 
   &::part(checkbox__control--indeterminate),
   &::part(checkbox__control--checked) {
-    background-color: var(--cs-checkbox-color-background-checked);
+    background-color: var(--cs-checkbox-background-checked);
     border-color: transparent;
-    color: var(--cs-checkbox-color-foreground-checked);
+    color: var(--cs-checkbox-checked);
   }
 
   &::part(item) {
@@ -27,6 +27,6 @@ sl-tree-item {
   }
 
   &::part(item--selected) {
-    border-inline-start-color: var(--cs-checkbox-color-background-checked);
+    border-inline-start-color: var(--cs-checkbox-background-checked);
   }
 }

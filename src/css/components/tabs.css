@@ -1,12 +1,12 @@
 sl-tab-group {
-  --indicator-color: var(--cs-tab-color-background-active);
+  --indicator-color: var(--cs-tab-background-active);
   --track-color: #ebebeb;
   --track-width: 1px;
   display: block;
 
   &::part(active-tab-indicator) {
     border-radius: var(--cs-border-radius-m) var(--cs-border-radius-m) 0 0;
-    background-color: var(--cs-tab-color-background-active);
+    background-color: var(--cs-tab-background-active);
     padding: 1px;
   }
 
@@ -16,15 +16,15 @@ sl-tab-group {
 }
 
 sl-tab {
-  color: var(--cs-tab-color-foreground);
+  color: var(--cs-tab-color);
   font: var(--cs-type-sans-serif-m);
 
   &[aria-selected="true"] {
-    color: var(--cs-tab-color-foreground-active);
+    color: var(--cs-tab-color-active);
   }
 
   &:hover {
-    color: var(--cs-tab-color-foreground-hover);
+    color: var(--cs-tab-color-hover);
   }
 
   &::part(base) {

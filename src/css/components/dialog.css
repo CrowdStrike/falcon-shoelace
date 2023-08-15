@@ -4,7 +4,7 @@ sl-dialog {
   }
 
   &::part(panel) {
-    box-shadow: var(--cs-shadow-drop-2xl);
+    box-shadow: var(--cs-drop-shadow-2xl);
   }
 
   &::part(title) {

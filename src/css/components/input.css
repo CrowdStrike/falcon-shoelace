@@ -8,17 +8,17 @@
   --sl-input-border-color-hover: transparent;
   --sl-input-border-color-focus: transparent;
   --sl-input-border-color-disabled: transparent;
-  --sl-input-color: var(--cs-input-color-foreground);
-  --sl-input-color-hover: var(--cs-input-color-foreground);
-  --sl-input-color-focus: var(--cs-input-color-foreground);
-  --sl-input-color-disabled: var(--cs-input-color-foreground-disabled);
-  --sl-input-help-text-color: var(--cs-input-color-label);
-  --sl-input-label-color: var(--cs-input-color-label);
-  --sl-input-placeholder-color: var(--cs-input-color-placeholder);
-  --sl-input-placeholder-color-disabled: var(--cs-input-color-placeholder);
-  --sl-input-icon-color: var(--cs-input-color-label);
-  --sl-input-icon-color-hover: var(--cs-input-color-label);
-  --sl-input-icon-color-focus: var(--cs-input-color-label);
+  --sl-input-color: var(--cs-input-color);
+  --sl-input-color-hover: var(--cs-input-color);
+  --sl-input-color-focus: var(--cs-input-color);
+  --sl-input-color-disabled: var(--cs-input-disabled-color);
+  --sl-input-help-text-color: var(--cs-input-label-color);
+  --sl-input-label-color: var(--cs-input-label-color);
+  --sl-input-placeholder-color: var(--cs-input-placeholder-color);
+  --sl-input-placeholder-color-disabled: var(--cs-input-placeholder-color);
+  --sl-input-icon-color: var(--cs-input-label-color);
+  --sl-input-icon-color-hover: var(--cs-input-label-color);
+  --sl-input-icon-color-focus: var(--cs-input-label-color);
   --sl-input-spacing-medium: var(--cs-space-x3);
   --sl-input-background-color: var(--cs-overlay-darker);
   --sl-input-background-color-hover: var(--cs-overlay-darker);
@@ -53,7 +53,7 @@ sl-textarea {
     box-shadow: var(--cs-input-shadow-invalid);
 
     &:focus-within {
-      box-shadow: var(--cs-input-shadow-invalid-focus);
+      box-shadow: var(--cs-input-shadow-focus-invalid);
     }
   }
 
