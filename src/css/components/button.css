@@ -57,17 +57,14 @@ sl-button[variant="danger"]::part(base) {
 
   &:hover {
     background-color: var(--cs-button-danger-background-hover);
-    color: var(--cs-button-danger-color-hover);
   }
 
   &:focus-visible {
     background-color: var(--cs-button-danger-background-hover);
-    color: var(--cs-button-danger-color-hover);
   }
 
   &:active {
     background-color: var(--cs-button-danger-background-active);
-    color: var(--cs-button-danger-color-active);
   }
 }
 

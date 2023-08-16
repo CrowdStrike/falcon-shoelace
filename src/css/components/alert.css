@@ -12,54 +12,54 @@ sl-alert {
 
   &[variant="primary"] {
     &::part(base) {
-      border-color: var(--cs-color-info);
+      border-color: var(--cs-color-alert-info);
     }
 
     &::part(icon) {
-      color: var(--cs-color-info);
+      color: var(--cs-color-alert-info);
     }
   }
 
   &[variant="success"] {
     &::part(base) {
-      border-color: var(--cs-color-success);
+      border-color: var(--cs-color-alert-success);
     }
 
     &::part(icon) {
-      color: var(--cs-color-success);
+      color: var(--cs-color-alert-success);
     }
   }
 
   &[variant="neutral"] {
     &::part(base) {
-      border-color: var(--cs-color-neutral);
+      border-color: var(--cs-color-alert-neutral);
 
     }
 
     &::part(icon) {
-      color: var(--cs-color-neutral);
+      color: var(--cs-color-alert-neutral);
     }
   }
 
 
   &[variant="warning"] {
     &::part(base) {
-      border-color: var(--cs-color-warning);
+      border-color: var(--cs-color-alert-warning);
     }
 
     &::part(icon) {
-      color: var(--cs-color-warning);
+      color: var(--cs-color-alert-warning);
     }
   }
 
   &[variant="danger"] {
     &::part(base) {
-      border-color: var(--cs-color-danger);
+      border-color: var(--cs-color-alert-danger);
 
     }
 
     &::part(icon) {
-      color: var(--cs-color-danger);
+      color: var(--cs-color-alert-danger);
     }
   }
 }
