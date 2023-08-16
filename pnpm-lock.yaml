@@ -5,15 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  falcon-styles:
+    specifier: link:../falcon-styles
+    version: link:../falcon-styles
   postcss:
     specifier: ^8.4.24
     version: 8.4.24
   postcss-nesting:
     specifier: ^11.2.2
     version: 11.2.2(postcss@8.4.24)
-  falcon-styles:
-    specifier: link:../falcon-styles
-    version: link:../falcon-styles
+  prettier:
+    specifier: 3.0.2
+    version: 3.0.2
   typescript:
     specifier: ^5.0.2
     version: 5.0.2
@@ -310,6 +313,12 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /rollup@3.21.7:

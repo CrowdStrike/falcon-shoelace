@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "falcon-styles": "link:../falcon-styles",
     "postcss": "^8.4.24",
     "postcss-nesting": "^11.2.2",
-    "falcon-styles": "link:../falcon-styles",
+    "prettier": "3.0.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }

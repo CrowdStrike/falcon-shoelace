@@ -1,4 +1,5 @@
-:root, :host {
+:root,
+:host {
   --sl-spacing-3x-small: var(--cs-space-x1);
   --sl-spacing-2x-small: var(--cs-space-x1);
   --sl-spacing-x-small: var(--cs-space-x1);

@@ -6,7 +6,6 @@ sl-details {
     background-color: var(--cs-details-summary-background);
   }
 
-
   &::part(summary) {
     color: var(--cs-details-summary-color);
     font: var(--cs-type-sans-serif-l-tight-semibold);

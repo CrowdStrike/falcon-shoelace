@@ -33,7 +33,6 @@ sl-input::part(input) {
 sl-input,
 sl-select,
 sl-textarea {
-
   &::part(base),
   &::part(combobox) {
     box-shadow: var(--cs-input-shadow);

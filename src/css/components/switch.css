@@ -9,6 +9,5 @@ sl-switch {
 
   &::part(control) {
     box-shadow: var(--cs-inner-shadow-m);
-
   }
 }

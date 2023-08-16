@@ -33,14 +33,12 @@ sl-alert {
   &[variant="neutral"] {
     &::part(base) {
       border-color: var(--cs-color-alert-neutral);
-
     }
 
     &::part(icon) {
       color: var(--cs-color-alert-neutral);
     }
   }
-
 
   &[variant="warning"] {
     &::part(base) {
@@ -55,7 +53,6 @@ sl-alert {
   &[variant="danger"] {
     &::part(base) {
       border-color: var(--cs-color-alert-danger);
-
     }
 
     &::part(icon) {
