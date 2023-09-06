@@ -11,7 +11,7 @@
   --sl-input-color: var(--cs-input-color);
   --sl-input-color-hover: var(--cs-input-color);
   --sl-input-color-focus: var(--cs-input-color);
-  --sl-input-color-disabled: var(--cs-input-disabled-color);
+  --sl-input-color-disabled: var(--cs-input-color-disabled);
   --sl-input-help-text-color: var(--cs-input-label-color);
   --sl-input-label-color: var(--cs-input-label-color);
   --sl-input-placeholder-color: var(--cs-input-placeholder-color);

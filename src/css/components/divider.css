@@ -1,4 +1,4 @@
 sl-divider {
   --width: 1px;
-  --color: var(--cs-border-medium);
+  --color: var(--cs-border-color-light);
 }

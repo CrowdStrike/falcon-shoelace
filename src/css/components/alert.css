@@ -12,11 +12,11 @@ sl-alert {
 
   &[variant="primary"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-info);
+      border-color: var(--cs-color-alert-primary);
     }
 
     &::part(icon) {
-      color: var(--cs-color-alert-info);
+      color: var(--cs-color-alert-primary);
     }
   }
 
