@@ -48,7 +48,7 @@ sl-button[variant="default"]::part(base) {
 
 sl-button[variant="neutral"]::part(base) {
   background-color: transparent;
-  border: 1px solid #86858e;
+  border: 1px solid var(--cs-border-color-light);
 }
 
 sl-button[variant="danger"]::part(base) {
