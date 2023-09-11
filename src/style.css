@@ -1,4 +1,4 @@
-@import "falcon-styles/dist/style.css";
+@import "@crowdstrike/falcon-styles/dist/style.css";
 
 @import "./css/global.css";
 @import "./css/z-index.css";

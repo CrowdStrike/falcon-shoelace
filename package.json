@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "falcon-styles": "link:../falcon-styles",
+    "@crowdstrike/falcon-styles": "0.1.0",
     "postcss": "^8.4.24",
     "postcss-nesting": "^11.2.2",
     "prettier": "3.0.2",
