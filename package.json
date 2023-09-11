@@ -1,14 +1,26 @@
 {
-  "name": "falcon-shoelace",
-  "private": true,
+  "name": "@crowdstrike/falcon-shoelace",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrowdStrike/falcon-styles.git"
+  },
+  "license": "MIT",
+  "author": "CrowdStrike UX Team",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm build",
+    "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
     "@crowdstrike/falcon-styles": "0.1.0",
     "postcss": "^8.4.24",
     "postcss-nesting": "^11.2.2",
