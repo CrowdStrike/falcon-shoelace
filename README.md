@@ -19,7 +19,7 @@ Import the stylesheet:
 
 ## Switching Themes
 
-By default all styles are in light mode. To switch to the dark them add the class `theme-dark` to `documentElement`:
+By default all styles are in light mode. To switch to the dark theme add the class `theme-dark` to `documentElement`:
 
 ```html
 <html class="theme-dark"></html>
