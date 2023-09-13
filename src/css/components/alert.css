@@ -5,14 +5,14 @@ sl-alert {
   }
 
   &::part(base) {
+    border: 1px solid var(--cs-border-color-light);
     border-left: 3px solid;
     border-radius: var(--cs-border-radius-s);
-    box-shadow: var(--cs-drop-shadow-l);
   }
 
   &[variant="primary"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-primary);
+      border-left-color: var(--cs-color-alert-primary);
     }
 
     &::part(icon) {
@@ -22,7 +22,7 @@ sl-alert {
 
   &[variant="success"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-success);
+      border-left-color: var(--cs-color-alert-success);
     }
 
     &::part(icon) {
@@ -32,7 +32,7 @@ sl-alert {
 
   &[variant="neutral"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-neutral);
+      border-left-color: var(--cs-color-alert-neutral);
     }
 
     &::part(icon) {
@@ -42,7 +42,7 @@ sl-alert {
 
   &[variant="warning"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-warning);
+      border-left-color: var(--cs-color-alert-warning);
     }
 
     &::part(icon) {
@@ -52,7 +52,7 @@ sl-alert {
 
   &[variant="danger"] {
     &::part(base) {
-      border-color: var(--cs-color-alert-danger);
+      border-left-color: var(--cs-color-alert-danger);
     }
 
     &::part(icon) {
@@ -71,6 +71,7 @@ sl-alert {
   max-height: 100%;
 
   & sl-alert::part(base) {
+    box-shadow: var(--cs-drop-shadow-l);
     margin: var(--cs-space-x4);
   }
 }
