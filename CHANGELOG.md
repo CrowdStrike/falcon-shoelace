@@ -1,5 +1,11 @@
 # @crowdstrike/falcon-shoelace
 
+## 0.2.1
+
+### Patch Changes
+
+- [#5](https://github.com/CrowdStrike/falcon-shoelace/pull/5) [`6c05cef`](https://github.com/CrowdStrike/falcon-shoelace/commit/6c05cef5535f1d1379c44188d3e8319160325569) Thanks [@camskene](https://github.com/camskene)! - Update readme
+
 ## 0.2.0
 
 ### Minor Changes
