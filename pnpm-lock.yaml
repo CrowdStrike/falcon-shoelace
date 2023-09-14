@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^2.26.2
     version: 2.26.2
   '@crowdstrike/falcon-styles':
-    specifier: 0.1.0
-    version: 0.1.0
+    specifier: 0.2.1
+    version: 0.2.1
   postcss:
     specifier: ^8.4.24
     version: 8.4.24
@@ -264,8 +264,8 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@crowdstrike/falcon-styles@0.1.0:
-    resolution: {integrity: sha512-GOMkL4Ctvn/UTDdf8FDG71yzY2tYfA2ToOWS+MRte9anOATWi9xrZHIMaxuC+0CBgMBG1W75NSzmF/PdI0qsrw==}
+  /@crowdstrike/falcon-styles@0.2.1:
+    resolution: {integrity: sha512-lJ5w/ZxQKeKKK7d46pkh52XxEhEMCG4leIsXg0xYwQtfsHR9svMoOsIMzkBCwcc2DrWXyuRxu4rTE+wwWoxrow==}
     dev: true
 
   /@csstools/selector-specificity@2.2.0(postcss-selector-parser@6.0.13):
