@@ -1,5 +1,11 @@
 # @crowdstrike/falcon-shoelace
 
+## 0.2.3
+
+### Patch Changes
+
+- [`2b4b379`](https://github.com/CrowdStrike/falcon-shoelace/commit/2b4b3795c8f476cd9330930e7b1374c9bcb71a7e) Thanks [@camskene](https://github.com/camskene)! - Update falcon-styles dep
+
 ## 0.2.2
 
 ### Patch Changes
