@@ -52,7 +52,7 @@
         <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
         <strong>Your session has ended</strong><br />
         Please login again to continue.
-      </sl-alert>=
+      </sl-alert>
       <br />
       <sl-alert variant="danger" open>
         <sl-icon slot="icon" name="exclamation-octagon"></sl-icon>
@@ -142,6 +142,20 @@
         <sl-button>Center</sl-button>
         <sl-button>Right</sl-button>
       </sl-button-group>
+
+      <h2>Card</h2>
+      <sl-card>
+        <div slot="header">
+          <h3>Header Title</h3>
+          <sl-icon-button name="gear" label="Settings"></sl-icon-button>
+        </div>
+
+        Main content.
+
+        <div slot="footer">
+          <sl-button>Preview</sl-button>
+        </div>
+      </sl-card>
 
       <h2>Checkbox</h2>
       <sl-checkbox>Checkbox</sl-checkbox>

@@ -1,0 +1,23 @@
+sl-card {
+  --border-color: var(--cs-border-color-light);
+  --border-radius: var(--cs-border-radius-s);
+  --padding: var(--cs-space-x4);
+
+  display: block;
+
+  &::part(base) {
+    background-color: var(--cs-background-lightest);
+  }
+
+  [slot="header"],
+  [slot="footer"] {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-size: 1rem;
+    color: rebeccapurple;
+  }
+}
