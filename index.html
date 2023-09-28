@@ -5,434 +5,381 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/src/style.css" />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.8.0/cdn/shoelace-autoloader.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
 
     <title>Falcon Shoelace</title>
   </head>
   <style>
-    body {
-      padding: 2rem;
+    #root {
+      width: 800px;
+      margin: 3rem auto;
     }
 
-    #app {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
   </style>
   <body>
-    <sl-breadcrumb>
-      <sl-breadcrumb-item>Homepage</sl-breadcrumb-item>
-      <sl-breadcrumb-item>Our Services</sl-breadcrumb-item>
-      <sl-breadcrumb-item>
-        Web Design
-        <sl-dropdown slot="suffix">
-          <sl-button slot="trigger" size="small" circle variant="neutral">
-            <sl-icon label="More options" name="three-dots"></sl-icon>
-          </sl-button>
-          <sl-menu>
-            <sl-menu-item type="checkbox" checked>Web Design</sl-menu-item>
-            <sl-menu-item type="checkbox">Web Development</sl-menu-item>
-            <sl-menu-item type="checkbox">Marketing</sl-menu-item>
-          </sl-menu>
-        </sl-dropdown>
-      </sl-breadcrumb-item>
-      <sl-breadcrumb-item>Digital Media</sl-breadcrumb-item>
-      <sl-breadcrumb-item>
-        Web Design
-        <sl-dropdown slot="suffix">
-          <sl-button slot="trigger" size="small" circle variant="neutral">
-            <sl-icon label="More options" name="three-dots"></sl-icon>
-          </sl-button>
-          <sl-menu>
-            <sl-menu-item type="checkbox" checked>Web Design</sl-menu-item>
-            <sl-menu-item type="checkbox">Web Development</sl-menu-item>
-            <sl-menu-item type="checkbox">Marketing</sl-menu-item>
-          </sl-menu>
-        </sl-dropdown>
-      </sl-breadcrumb-item>
-    </sl-breadcrumb>
+    <div id="root">
+      <h1>Shoelace</h1>
+      <p><a target="_blank" href="https://shoelace.style">Shoelace</a></p>
 
-    <h1>Shoelace</h1>
-    <p><a target="_blank" href="https://shoelace.style">Shoelace</a></p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="app">
-      <div>
-        <sl-tree selection="multiple">
-          <sl-tree-item>
-            Deciduous
-            <sl-tree-item>Birch</sl-tree-item>
-            <sl-tree-item>
-              Maple
-              <sl-tree-item>Field maple</sl-tree-item>
-              <sl-tree-item>Red maple</sl-tree-item>
-              <sl-tree-item>Sugar maple</sl-tree-item>
-            </sl-tree-item>
-            <sl-tree-item>Oak</sl-tree-item>
-          </sl-tree-item>
+      <h2>Alert</h2>
+      <sl-alert variant="primary" open closable>
+        <sl-icon slot="icon" name="info-circle"></sl-icon>
+        <strong>This is super informative</strong><br />
+        You can tell by how pretty the alert is.
+      </sl-alert>
+      <br />
+      <sl-alert variant="success" open>
+        <sl-icon slot="icon" name="check2-circle"></sl-icon>
+        <strong>Your changes have been saved</strong><br />
+        You can safely exit the app now.
+      </sl-alert>
+      <br />
+      <sl-alert variant="neutral" open>
+        <sl-icon slot="icon" name="gear"></sl-icon>
+        <strong>Your settings have been updated</strong><br />
+        Settings will take affect on next login.
+      </sl-alert>
+      <br />
+      <sl-alert variant="warning" open>
+        <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+        <strong>Your session has ended</strong><br />
+        Please login again to continue.
+      </sl-alert>=
+      <br />
+      <sl-alert variant="danger" open>
+        <sl-icon slot="icon" name="exclamation-octagon"></sl-icon>
+        <strong>Your account has been deleted</strong><br />
+        We're very sorry to see you go!
+      </sl-alert>
 
-          <sl-tree-item>
-            Coniferous
-            <sl-tree-item>Cedar</sl-tree-item>
-            <sl-tree-item>Pine</sl-tree-item>
-            <sl-tree-item>Spruce</sl-tree-item>
-          </sl-tree-item>
-
-          <sl-tree-item>
-            Non-trees
-            <sl-tree-item>Bamboo</sl-tree-item>
-            <sl-tree-item>Cactus</sl-tree-item>
-            <sl-tree-item>Fern</sl-tree-item>
-          </sl-tree-item>
-        </sl-tree>
-
-      </div>
-      <div>
-        <sl-drawer label="Drawer" class="drawer-overview">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <sl-button slot="footer" variant="primary">Close</sl-button>
-        </sl-drawer>
-
-        <sl-button>Open Drawer</sl-button>
-
-        <script>
-          (function () {
-            const drawer = document.querySelector('.drawer-overview');
-            const openButton = drawer.nextElementSibling;
-            const closeButton = drawer.querySelector('sl-button[variant="primary"]');
-
-            openButton.addEventListener('click', () => drawer.show());
-            closeButton.addEventListener('click', () => drawer.hide());
-          })()
-        </script>
-      </div>
-      <div>
-        <sl-divider style="--color: var(--cs-border-light);"></sl-divider><br />
-        <sl-divider></sl-divider><br />
-        <sl-divider style="--color: var(--cs-border-bold); --width: 1px" ></sl-divider><br />
-      </div>
-      <div>
-        <div class="alert-toast-wrapper">
-          <sl-button variant="primary">Create Toast</sl-button>
-        </div>
-
-        <script>
-          const container = document.querySelector('.alert-toast-wrapper');
-          const button = container.querySelector('sl-button');
-          let count = 0;
-
-          // Always escape HTML for text arguments!
-          function escapeHtml(html) {
-            const div = document.createElement('div');
-            div.textContent = html;
-            return div.innerHTML;
-          }
-
-          // Custom function to emit toast notifications
-          function notify(message, variant = 'primary', icon = 'info-circle', duration = 'Infinity') {
-            const alert = Object.assign(document.createElement('sl-alert'), {
-              variant,
-              closable: true,
-              duration: duration,
-              innerHTML: `
-                <sl-icon name="${icon}" slot="icon"></sl-icon>
-                ${escapeHtml(message)}
-              `
-            });
-
-            alert.style.position = 'fixed';
-            alert.style.left = 0;
-            alert.style.right = 'auto';
-
-            document.body.append(alert);
-            return alert.toast();
-          }
-
-          button.addEventListener('click', () => {
-            notify(`This is custom toast #${++count}`);
-          });
-        </script>
-
-      </div>
-      <div>
-        <sl-alert variant="primary" open closable>
-          <sl-icon slot="icon" name="info-circle"></sl-icon>
-          <strong>This is super informative</strong><br />
-          You can tell by how pretty the alert is.
-        </sl-alert>
-
-        <br />
-
-        <sl-alert variant="success" open>
-          <sl-icon slot="icon" name="check2-circle"></sl-icon>
-          <strong>Your changes have been saved</strong><br />
-          You can safely exit the app now.
-        </sl-alert>
-
-        <br />
-
-        <sl-alert variant="neutral" open>
-          <sl-icon slot="icon" name="gear"></sl-icon>
-          <strong>Your settings have been updated</strong><br />
-          Settings will take affect on next login.
-        </sl-alert>
-
-        <br />
-
-        <sl-alert variant="warning" open>
-          <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
-          <strong>Your session has ended</strong><br />
-          Please login again to continue.
-        </sl-alert>
-
-        <br />
-
-        <sl-alert variant="danger" open>
-          <sl-icon slot="icon" name="exclamation-octagon"></sl-icon>
-          <strong>Your account has been deleted</strong><br />
-          We're very sorry to see you go!
-        </sl-alert>
-
-      </div>
-      <div>
-        <sl-dialog label="Dialog" class="dialog">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <sl-button slot="footer" variant="primary">Close</sl-button>
-        </sl-dialog>
-
-        <sl-button>Open Dialog</sl-button>
-
-        <script>
-          const dialog = document.querySelector('.dialog');
-          const openButton = dialog.nextElementSibling;
-          const closeButton = dialog.querySelector('sl-button[slot="footer"]');
-
-          openButton.addEventListener('click', () => dialog.show());
-          closeButton.addEventListener('click', () => dialog.hide());
-        </script>
-      </div>
-      <div>
-        <sl-switch>Switch</sl-switch>
-        <sl-switch disabled>Switch</sl-switch>
-      </div>
-      <div>
-        <sl-tooltip content="This is a tooltip">
-          <sl-button>Hover Me</sl-button>
-        </sl-tooltip>
-      </div>
-      <div>
-        <sl-tab-group>
-          <sl-tab slot="nav" panel="general">General</sl-tab>
-          <sl-tab slot="nav" panel="custom">Custom</sl-tab>
-          <sl-tab slot="nav" panel="advanced">Advanced</sl-tab>
-          <sl-tab slot="nav" panel="disabled" disabled>Disabled</sl-tab>
-
-          <sl-tab-panel name="general">This is the general tab panel.</sl-tab-panel>
-          <sl-tab-panel name="custom">This is the custom tab panel.</sl-tab-panel>
-          <sl-tab-panel name="advanced">This is the advanced tab panel.</sl-tab-panel>
-          <sl-tab-panel name="disabled">This is a disabled tab panel.</sl-tab-panel>
-        </sl-tab-group>
-      </div>
-      <div>
-        <sl-details summary="First" open>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </sl-details>
-
-        <sl-details summary="Second">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </sl-details>
-
-        <sl-details summary="Third">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </sl-details>
-      </div>
-
-      <div>
-        <sl-select label="Select a Few" value="option-1 option-2 option-3" multiple clearable>
-          <sl-option value="option-1">Option 1</sl-option>
-          <sl-option value="option-2">Option 2</sl-option>
-          <sl-option value="option-3">Option 3</sl-option>
-          <sl-option value="option-4">Option 4</sl-option>
-          <sl-option value="option-5">Option 5</sl-option>
-          <sl-option value="option-6">Option 6</sl-option>
-        </sl-select>
-      </div>
-
-      <div>
-        <sl-button variant="neutral">Neutral</sl-button>
-        <sl-button variant="primary">Primary</sl-button>
-        <sl-button>Default</sl-button>
-        <sl-button variant="danger">Danger</sl-button>
-        <sl-button variant="text">Text</sl-button>
-        <sl-button href="https://example.com" variant="default">
-          <sl-icon slot="prefix" name="incognito"></sl-icon>
-          Settings
-        </sl-button>
-
-        <sl-button variant="default">
-          <sl-icon name="gear"></sl-icon>
-        </sl-button>
-
-        <br />
-        <br />
-        <sl-button disabled variant="neutral">Neutral</sl-button>
-        <sl-button disabled variant="primary">Primary</sl-button>
-        <sl-button disabled>Default</sl-button>
-        <sl-button disabled variant="danger">Danger</sl-button>
-        <sl-button disabled variant="text">Text</sl-button>
-        <sl-button disabled>
-          <sl-icon slot="prefix" name="gear"></sl-icon>
-          Settings
-        </sl-button>
-        <sl-button variant="default" disabled>
-          <sl-icon name="gear"></sl-icon>
-        </sl-button>
-        <br>
-        <br>
-        <sl-button-group label="Example Button Group">
-          <sl-button variant="primary">Save</sl-button>
-          <sl-dropdown placement="bottom-end">
-            <sl-button slot="trigger" variant="primary" caret>
-              <sl-visually-hidden>More options</sl-visually-hidden>
+      <h2>Breadcrumb</h2>
+      <sl-breadcrumb>
+        <sl-breadcrumb-item>Homepage</sl-breadcrumb-item>
+        <sl-breadcrumb-item>Our Services</sl-breadcrumb-item>
+        <sl-breadcrumb-item>
+          Web Design
+          <sl-dropdown slot="suffix">
+            <sl-button slot="trigger" size="small" circle variant="neutral">
+              <sl-icon label="More options" name="three-dots"></sl-icon>
             </sl-button>
             <sl-menu>
-              <sl-menu-item>Save</sl-menu-item>
-              <sl-menu-item>Save as&hellip;</sl-menu-item>
-              <sl-menu-item>Save all</sl-menu-item>
+              <sl-menu-item type="checkbox" checked>Web Design</sl-menu-item>
+              <sl-menu-item type="checkbox">Web Development</sl-menu-item>
+              <sl-menu-item type="checkbox">Marketing</sl-menu-item>
             </sl-menu>
           </sl-dropdown>
-        </sl-button-group>
-        <br>
-        <br>
-        <sl-button-group label="Alignment">
-          <sl-button>Left</sl-button>
-          <sl-button>Center</sl-button>
-          <sl-button>Right</sl-button>
-        </sl-button-group>
-        <br />
-        <br />
-        <sl-dropdown>
-          <sl-button slot="trigger" caret>
-            Dropdown
+        </sl-breadcrumb-item>
+        <sl-breadcrumb-item>Digital Media</sl-breadcrumb-item>
+        <sl-breadcrumb-item>
+          Web Design
+          <sl-dropdown slot="suffix">
+            <sl-button slot="trigger" size="small" circle variant="neutral">
+              <sl-icon label="More options" name="three-dots"></sl-icon>
+            </sl-button>
+            <sl-menu>
+              <sl-menu-item type="checkbox" checked>Web Design</sl-menu-item>
+              <sl-menu-item type="checkbox">Web Development</sl-menu-item>
+              <sl-menu-item type="checkbox">Marketing</sl-menu-item>
+            </sl-menu>
+          </sl-dropdown>
+        </sl-breadcrumb-item>
+      </sl-breadcrumb>
+
+      <h2>Button</h2>
+      <sl-button variant="neutral">Neutral</sl-button>
+      <sl-button variant="primary">Primary</sl-button>
+      <sl-button>Default</sl-button>
+      <sl-button variant="danger">Danger</sl-button>
+      <sl-button variant="text">Text</sl-button>
+      <sl-button href="https://example.com" variant="default">
+        <sl-icon slot="prefix" name="incognito"></sl-icon>
+        Settings
+      </sl-button>
+      <sl-button variant="default">
+        <sl-icon name="gear"></sl-icon>
+      </sl-button>
+      <br />
+      <br />
+      <sl-button disabled variant="neutral">Neutral</sl-button>
+      <sl-button disabled variant="primary">Primary</sl-button>
+      <sl-button disabled>Default</sl-button>
+      <sl-button disabled variant="danger">Danger</sl-button>
+      <sl-button disabled variant="text">Text</sl-button>
+      <sl-button disabled>
+        <sl-icon slot="prefix" name="gear"></sl-icon>
+        Settings
+      </sl-button>
+      <sl-button variant="default" disabled>
+        <sl-icon name="gear"></sl-icon>
+      </sl-button>
+
+      <h2>Button (Split)</h2>
+      <sl-button-group label="Example Button Group">
+        <sl-button variant="primary">Save</sl-button>
+        <sl-dropdown placement="bottom-end">
+          <sl-button slot="trigger" variant="primary" caret>
+            <sl-visually-hidden>More options</sl-visually-hidden>
           </sl-button>
           <sl-menu>
-            <sl-menu-item>Dropdown Item 1</sl-menu-item>
-            <sl-menu-item>Dropdown Item 2</sl-menu-item>
-            <sl-menu-item>Dropdown Item 3</sl-menu-item>
-            <sl-divider></sl-divider>
-            <sl-menu-item type="checkbox" checked>Checkbox</sl-menu-item>
-            <sl-menu-label>Fruits</sl-menu-label>
-            <sl-menu-item value="apple">Apple</sl-menu-item>
-            <sl-menu-item value="banana">Banana</sl-menu-item>
-            <sl-menu-item value="orange">Orange</sl-menu-item>
-            <sl-divider></sl-divider>
-            <sl-menu-label>Vegetables</sl-menu-label>
-            <sl-menu-item value="broccoli">Broccoli</sl-menu-item>
-            <sl-menu-item value="carrot">Carrot</sl-menu-item>
-            <sl-menu-item value="zucchini">Zucchini</sl-menu-item>
-            <sl-menu-item disabled>Disabled</sl-menu-item>
-            <sl-divider></sl-divider>
-            <sl-menu-label>Icons</sl-menu-label>
-            <sl-menu-item>
-              Prefix
-              <sl-icon slot="prefix" name="gift"></sl-icon>
-            </sl-menu-item>
-            <sl-menu-item>
-              Suffix Icon
-              <sl-icon slot="suffix" name="heart"></sl-icon>
-            </sl-menu-item>
+            <sl-menu-item>Save</sl-menu-item>
+            <sl-menu-item>Save as&hellip;</sl-menu-item>
+            <sl-menu-item>Save all</sl-menu-item>
           </sl-menu>
         </sl-dropdown>
+      </sl-button-group>
 
-        <br />
-        <br />
+      <h2>Button Group</h2>
+      <sl-button-group label="Alignment">
+        <sl-button>Left</sl-button>
+        <sl-button>Center</sl-button>
+        <sl-button>Right</sl-button>
+      </sl-button-group>
 
-        <sl-dropdown disabled>
-          <sl-button disabled slot="trigger" caret>Dropdown</sl-button>
-          <sl-menu>
-            <sl-menu-item>Dropdown Item 1</sl-menu-item>
-            <sl-menu-item>Dropdown Item 2</sl-menu-item>
-          </sl-menu>
-        </sl-dropdown>
+      <h2>Checkbox</h2>
+      <sl-checkbox>Checkbox</sl-checkbox>
+      <br />
+      <br />
+      <sl-checkbox disabled>Checkbox</sl-checkbox>
+
+      <h2>Details</h2>
+      <sl-details summary="First" open>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </sl-details>
+      <sl-details summary="Second">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </sl-details>
+      <sl-details summary="Third">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </sl-details>
+
+      <h2>Dialog</h2>
+      <sl-dialog label="Dialog" class="dialog">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <sl-button slot="footer" variant="primary">Close</sl-button>
+      </sl-dialog>
+      <sl-button>Open Dialog</sl-button>
+
+      <h2>Divider</h2>
+      <sl-divider></sl-divider>
+      <br />
+      <sl-divider style="--color: var(--cs-border-color-medium);"></sl-divider>
+      <br />
+      <sl-divider style="--color: var(--cs-border-color-bold); --width: 1px" ></sl-divider>
+
+      <h2>Drawer</h2>
+      <sl-drawer label="Drawer" class="drawer-overview">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <sl-button slot="footer" variant="primary">Close</sl-button>
+      </sl-drawer>
+      <sl-button>Open Drawer</sl-button>
+
+      <h2>Dropdown</h2>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret>
+          Dropdown
+        </sl-button>
+        <sl-menu>
+          <sl-menu-item>Dropdown Item 1</sl-menu-item>
+          <sl-menu-item>Dropdown Item 2</sl-menu-item>
+          <sl-menu-item>Dropdown Item 3</sl-menu-item>
+          <sl-divider></sl-divider>
+          <sl-menu-item type="checkbox" checked>Checkbox</sl-menu-item>
+          <sl-menu-label>Fruits</sl-menu-label>
+          <sl-menu-item value="apple">Apple</sl-menu-item>
+          <sl-menu-item value="banana">Banana</sl-menu-item>
+          <sl-menu-item value="orange">Orange</sl-menu-item>
+          <sl-divider></sl-divider>
+          <sl-menu-label>Vegetables</sl-menu-label>
+          <sl-menu-item value="broccoli">Broccoli</sl-menu-item>
+          <sl-menu-item value="carrot">Carrot</sl-menu-item>
+          <sl-menu-item value="zucchini">Zucchini</sl-menu-item>
+          <sl-menu-item disabled>Disabled</sl-menu-item>
+          <sl-divider></sl-divider>
+          <sl-menu-label>Icons</sl-menu-label>
+          <sl-menu-item>
+            Prefix
+            <sl-icon slot="prefix" name="gift"></sl-icon>
+          </sl-menu-item>
+          <sl-menu-item>
+            Suffix Icon
+            <sl-icon slot="suffix" name="heart"></sl-icon>
+          </sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <sl-dropdown disabled>
+        <sl-button disabled slot="trigger" caret>Dropdown</sl-button>
+        <sl-menu>
+          <sl-menu-item>Dropdown Item 1</sl-menu-item>
+          <sl-menu-item>Dropdown Item 2</sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+
+      <h2>Input</h2>
+      <sl-input label="Name" help-text="Your preferred name" value="value">
+        <sl-icon name="chat" slot="suffix"></sl-icon>
+      </sl-input>
+      <sl-input disabled label="Name" help-text="Your preferred name" value="value"></sl-input>
+
+      <h2>Radio</h2>
+      <sl-radio>Option</sl-radio>
+      <sl-radio disabled>Option</sl-radio>
+
+      <h2>Radio Group</h2>
+      <sl-radio-group label="Select an option" help-text="Choose the most appropriate option." name="a" value="1">
+        <sl-radio value="1">Option 1</sl-radio>
+        <sl-radio value="2">Option 2</sl-radio>
+        <sl-radio value="3">Option 3</sl-radio>
+      </sl-radio-group>
+
+      <h2>Select</h2>
+      <h3>Single</h3>
+      <sl-select label="Select one" size="medium" required>
+        <sl-icon name="house" slot="prefix"></sl-icon>
+        <sl-option value="option-1">Option 1</sl-option>
+        <sl-option value="option-2">Option 2</sl-option>
+        <sl-option value="option-3">Option 3</sl-option>
+      </sl-select>
+
+      <h3>Multiple</h3>
+      <sl-select label="Select a Few" value="option-1 option-2 option-3" multiple clearable>
+        <sl-option value="option-1">Option 1</sl-option>
+        <sl-option value="option-2">Option 2</sl-option>
+        <sl-option value="option-3">Option 3</sl-option>
+        <sl-option value="option-4">Option 4</sl-option>
+        <sl-option value="option-5">Option 5</sl-option>
+        <sl-option value="option-6">Option 6</sl-option>
+      </sl-select>
+
+      <h2>Spinner</h2>
+      <sl-spinner></sl-spinner>
+      <sl-spinner style="font-size: 2rem;"></sl-spinner>
+      <sl-spinner style="font-size: 3rem;"></sl-spinner>
+
+      <h2>Switch</h2>
+      <sl-switch>Switch</sl-switch>
+      <sl-switch disabled>Switch</sl-switch>
+
+      <h2>Tabs</h2>
+      <sl-tab-group>
+        <sl-tab slot="nav" panel="general">General</sl-tab>
+        <sl-tab slot="nav" panel="custom">Custom</sl-tab>
+        <sl-tab slot="nav" panel="advanced">Advanced</sl-tab>
+        <sl-tab slot="nav" panel="disabled" disabled>Disabled</sl-tab>
+
+        <sl-tab-panel name="general">This is the general tab panel.</sl-tab-panel>
+        <sl-tab-panel name="custom">This is the custom tab panel.</sl-tab-panel>
+        <sl-tab-panel name="advanced">This is the advanced tab panel.</sl-tab-panel>
+        <sl-tab-panel name="disabled">This is a disabled tab panel.</sl-tab-panel>
+      </sl-tab-group>
+
+      <h2>Textarea</h2>
+      <sl-textarea label="Feedback" help-text="Please tell us what you think." required> </sl-textarea>
+      <sl-textarea disabled label="Feedback" help-text="Please tell us what you think."> </sl-textarea>
+
+      <h2>Toast</h2>
+      <div class="alert-toast-wrapper">
+        <sl-button variant="primary">Create Toast</sl-button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 1rem">
-        <div>
-          <sl-checkbox>Checkbox</sl-checkbox>
-          <br />
-          <sl-checkbox disabled>Checkbox</sl-checkbox>
-        </div>
+      <h2>Tooltip</h2>
+      <sl-tooltip content="This is a tooltip">
+        <sl-button>Hover Me</sl-button>
+      </sl-tooltip>
 
-        <div>
-          <sl-radio>Option</sl-radio>
-          <sl-radio disabled>Option</sl-radio>
-        </div>
-
-        <div>
-          <sl-radio-group label="Select an option" help-text="Choose the most appropriate option." name="a" value="1">
-            <sl-radio value="1">Option 1</sl-radio>
-            <sl-radio value="2">Option 2</sl-radio>
-            <sl-radio value="3">Option 3</sl-radio>
-          </sl-radio-group>
-        </div>
-      </div>
-
-      <div>
-        <form style="display: flex; flex-direction: column; gap: 1rem;">
-          <sl-input label="Name" help-text="Your preferred name" value="value">
-            <sl-icon name="chat" slot="suffix"></sl-icon>
-          </sl-input>
-          <sl-input label="Name" help-text="Your preferred name" value="value">
-            <sl-icon name="house" slot="prefix"></sl-icon>
-            <sl-icon name="chat" slot="suffix"></sl-icon>
-          </sl-input>
-
-          <sl-select label="Select one" size="medium" required>
-            <sl-icon name="house" slot="prefix"></sl-icon>
-            <sl-option value="option-1">option 1</sl-option>
-            <sl-option value="option-2">Option 2</sl-option>
-            <sl-option value="option-3">Option 3</sl-option>
-          </sl-select>
-
-          <sl-textarea label="Feedback" help-text="Please tell us what you think." required> </sl-textarea>
-
-          <sl-checkbox value="accept" required>Accept terms and conditions</sl-checkbox>
-
-          <sl-radio-group required label="Select an option" help-text="Choose the most appropriate option." name="a" value="">
-            <sl-radio disabled value="1">Option 1</sl-radio>
-            <sl-radio disabled value="2">Option 2</sl-radio>
-            <sl-radio value="3">Option 3</sl-radio>
-          </sl-radio-group>
-
-          <sl-button-group>
-            <sl-button type="reset" variant="default">Reset</sl-button>
-            <sl-button type="submit" variant="primary">Submit</sl-button>
-          </sl-button-group>
-        </form>
-
-        <br />
-        <br />
-
-        <sl-input disabled label="Name" help-text="Your preferred name" value="value"></sl-input>
-        <sl-textarea disabled label="Feedback" help-text="Please tell us what you think."> </sl-textarea>
-        <sl-select disabled label="Select one" size="medium" required>
-          <sl-icon name="house" slot="prefix"></sl-icon>
-          <sl-option value="option-1">Option 1</sl-option>
-          <sl-option value="option-2">Option 2</sl-option>
-          <sl-option value="option-3">Option 3</sl-option>
-        </sl-select>
-      </div>
-      <div>
-        <sl-spinner></sl-spinner>
-        <sl-spinner style="font-size: 2rem;"></sl-spinner>
-        <sl-spinner style="font-size: 3rem;"></sl-spinner>
-      </div>
+      <h2>Tree</h2>
+      <sl-tree selection="multiple">
+        <sl-tree-item>
+          Deciduous
+          <sl-tree-item>Birch</sl-tree-item>
+          <sl-tree-item>
+            Maple
+            <sl-tree-item>Field maple</sl-tree-item>
+            <sl-tree-item>Red maple</sl-tree-item>
+            <sl-tree-item>Sugar maple</sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>Oak</sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Coniferous
+          <sl-tree-item>Cedar</sl-tree-item>
+          <sl-tree-item>Pine</sl-tree-item>
+          <sl-tree-item>Spruce</sl-tree-item>
+        </sl-tree-item>
+        <sl-tree-item>
+          Non-trees
+          <sl-tree-item>Bamboo</sl-tree-item>
+          <sl-tree-item>Cactus</sl-tree-item>
+          <sl-tree-item>Fern</sl-tree-item>
+        </sl-tree-item>
+      </sl-tree>
     </div>
+
+    <script>
+      (function dialog() {
+        const dialog = document.querySelector('.dialog');
+        const openButton = dialog.nextElementSibling;
+        const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+
+        openButton.addEventListener('click', () => dialog.show());
+        closeButton.addEventListener('click', () => dialog.hide());
+      })();
+
+      (function drawer() {
+        const drawer = document.querySelector('.drawer-overview');
+        const openButton = drawer.nextElementSibling;
+        const closeButton = drawer.querySelector('sl-button[variant="primary"]');
+
+        openButton.addEventListener('click', () => drawer.show());
+        closeButton.addEventListener('click', () => drawer.hide());
+      })();
+
+      (function toast() {
+        const container = document.querySelector('.alert-toast-wrapper');
+        const button = container.querySelector('sl-button');
+        let count = 0;
+
+        // Always escape HTML for text arguments!
+        function escapeHtml(html) {
+          const div = document.createElement('div');
+          div.textContent = html;
+          return div.innerHTML;
+        }
+
+        // Custom function to emit toast notifications
+        function notify(message, variant = 'primary', icon = 'info-circle', duration = 'Infinity') {
+          const alert = Object.assign(document.createElement('sl-alert'), {
+            variant,
+            closable: true,
+            duration: duration,
+            innerHTML: `
+              <sl-icon name="${icon}" slot="icon"></sl-icon>
+              ${escapeHtml(message)}
+            `
+          });
+
+          alert.style.position = 'fixed';
+          alert.style.left = 0;
+          alert.style.right = 'auto';
+
+          document.body.append(alert);
+          return alert.toast();
+        }
+
+        button.addEventListener('click', () => {
+          notify(`This is custom toast #${++count}`);
+        });
+      })();
+    </script>
   </body>
 </html>
