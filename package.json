@@ -25,7 +25,6 @@
     "postcss": "^8.4.24",
     "postcss-nesting": "^11.2.2",
     "prettier": "3.0.2",
-    "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }
 }
