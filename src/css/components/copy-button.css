@@ -1,0 +1,12 @@
+sl-copy-button {
+  &::part(tooltip__base__popup) {
+    background-color: var(--cs-tooltip-background);
+    box-shadow: var(--cs-drop-shadow-s);
+    border-radius: var(--cs-border-radius-s);
+  }
+
+  &::part(tooltip__base__arrow) {
+    background-color: var(--cs-tooltip-background);
+    box-shadow: var(--cs-drop-shadow-s);
+  }
+}

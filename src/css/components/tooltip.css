@@ -10,6 +10,7 @@
 sl-tooltip {
   &::part(base__popup) {
     box-shadow: var(--cs-drop-shadow-s);
+    border-radius: var(--cs-border-radius-s);
   }
 
   &::part(base__arrow) {
