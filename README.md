@@ -32,4 +32,4 @@ document.documentElement.classList.toggle('theme-dark')
 
 ## Included Dependencies
 
-The falcon-shoelace stylesheet includes [falcon-styles](https://github.com/sindresorhus/modern-normalize) and it's single dependency [modern-normalize](https://github.com/sindresorhus/modern-normalize).
+The falcon-shoelace stylesheet includes [falcon-styles](https://github.com/CrowdStrike/falcon-styles) and it's single dependency [modern-normalize](https://github.com/sindresorhus/modern-normalize).
