@@ -1,5 +1,11 @@
 # @crowdstrike/falcon-shoelace
 
+## 0.3.0
+
+### Minor Changes
+
+- [`ad21f6f`](https://github.com/CrowdStrike/falcon-shoelace/commit/ad21f6fc6df0921ac14b9a5aecdb66324a83ea1c) Thanks [@camskene](https://github.com/camskene)! - Update to latest version of falcon-styles
+
 ## 0.2.3
 
 ### Patch Changes
