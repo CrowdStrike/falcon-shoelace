@@ -5,7 +5,7 @@ sl-alert {
   }
 
   &::part(base) {
-    border: 1px solid var(--cs-border-color-light);
+    border: 1px solid var(--cs-border-color-medium);
     border-left: 3px solid;
     border-radius: var(--cs-border-radius-s);
   }

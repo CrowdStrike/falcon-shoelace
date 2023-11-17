@@ -38,10 +38,6 @@ sl-textarea {
     box-shadow: var(--cs-input-shadow);
   }
 
-  &::part(input) {
-    font: var(--cs-type-sans-serif-s);
-  }
-
   &::part(base):focus-within,
   &::part(combobox):focus-within {
     box-shadow: var(--cs-input-shadow-focus);
@@ -50,16 +46,16 @@ sl-textarea {
   &[data-user-invalid]::part(base),
   &[data-user-invalid]::part(combobox) {
     box-shadow: var(--cs-input-shadow-invalid);
-
-    &:focus-within {
-      box-shadow: var(--cs-input-shadow-focus-invalid);
-    }
   }
 
   &[disabled]::part(base),
   &[disabled]::part(combobox) {
     box-shadow: none;
     opacity: 1;
+  }
+
+  &::part(input) {
+    font: var(--cs-type-sans-serif-s);
   }
 }
 

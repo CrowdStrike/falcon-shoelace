@@ -2,8 +2,8 @@ sl-switch {
   --thumb-size: 0.8rem;
   --width: 1.875rem;
   --height: 1rem;
-  --sl-color-neutral-400: var(--cs-switch-control-background);
-  --sl-color-primary-600: var(--cs-switch-control-background-checked);
+  --sl-color-neutral-400: var(--cs-switch-track-background);
+  --sl-color-primary-600: var(--cs-switch-track-background-checked);
   --sl-color-neutral-0: var(--cs-switch-thumb-background);
   --sl-focus-ring-offset: 3px;
 

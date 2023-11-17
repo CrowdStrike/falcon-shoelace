@@ -2,18 +2,18 @@ sl-details {
   --sl-focus-ring-offset: var(--cs-focus-ring-inset);
 
   &::part(base) {
-    border-bottom: var(--cs-details-border);
-    background-color: var(--cs-details-summary-background);
+    border-bottom: 1px solid var(--cs-border-color-medium);
+    background-color: var(--cs-background-lightest);
   }
 
   &::part(summary) {
-    color: var(--cs-details-summary-color);
+    color: var(--cs-text-primary);
     font: var(--cs-type-sans-serif-l-tight-semibold);
   }
 
   &::part(content) {
     background-color: var(--cs-details-content-background);
-    color: var(--cs-details-content-color);
+    color: var(--cs-text-primary);
     font: var(--cs-type-sans-serif-s);
   }
 }
