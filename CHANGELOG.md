@@ -1,5 +1,11 @@
 # @crowdstrike/falcon-shoelace
 
+## 0.4.0
+
+### Minor Changes
+
+- [#12](https://github.com/CrowdStrike/falcon-shoelace/pull/12) [`b94f051`](https://github.com/CrowdStrike/falcon-shoelace/commit/b94f051b84a72a80d3c63a206cce16a42873591c) Thanks [@cs-ade-adesokan](https://github.com/cs-ade-adesokan)! - Added Radio Button component style
+
 ## 0.3.0
 
 ### Minor Changes
