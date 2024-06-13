@@ -1,0 +1,17 @@
+sl-radio-button::part(button) {
+  background-color: var(--cs-checkbox-background);
+  color: var(--cs-text-primary);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--cs-button-primary-background-hover);
+    color: var(--cs-checkbox-checked);
+    border-color: transparent;
+  }
+}
+
+sl-radio-button::part(button--checked) {
+  background-color: var(--cs-checkbox-background-checked);
+  color: var(--cs-checkbox-checked);
+  border-color: transparent;
+}
