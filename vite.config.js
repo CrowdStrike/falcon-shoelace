@@ -8,6 +8,7 @@ export default defineConfig({
       entry: path.resolve('src', 'style.css'),
       name: 'falcon-shoelace',
     },
+    cssCodeSplit: true,
   },
   css: {
     postcss: {
