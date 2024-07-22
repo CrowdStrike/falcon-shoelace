@@ -1,8 +1,11 @@
 :root,
 :host {
-  --sl-input-height-small: 2rem;
+  --sl-input-height-small: 1.8rem;
   --sl-input-height-medium: 2rem;
+  --sl-input-height-large: 2.5rem;
+  --sl-input-border-radius-small: var(--cs-border-radius-xs);
   --sl-input-border-radius-medium: var(--cs-border-radius-s);
+  --sl-input-border-radius-large: var(--cs-border-radius-m);
   --sl-input-border-width: 0;
   --sl-input-border-color: transparent;
   --sl-input-border-color-hover: transparent;
@@ -19,11 +22,16 @@
   --sl-input-icon-color: var(--cs-input-label-color);
   --sl-input-icon-color-hover: var(--cs-input-label-color);
   --sl-input-icon-color-focus: var(--cs-input-label-color);
+  --sl-input-spacing-small: var(--cs-space-x2);
   --sl-input-spacing-medium: var(--cs-space-x3);
+  --sl-input-spacing-large: var(--cs-space-x4);
   --sl-input-background-color: var(--cs-overlay-darker);
   --sl-input-background-color-hover: var(--cs-overlay-darker);
   --sl-input-background-color-focus: var(--cs-overlay-darker);
   --sl-input-background-color-disabled: var(--cs-overlay-darker);
+  --sl-input-font-size-small: var(--cs-font-size-s);
+  --sl-input-font-size-medium: var(--cs-font-size-m);
+  --sl-input-font-size-large: var(--cs-font-size-l);
 }
 
 sl-input::part(input) {
@@ -33,6 +41,7 @@ sl-input::part(input) {
 sl-input,
 sl-select,
 sl-textarea {
+
   &::part(base),
   &::part(combobox) {
     box-shadow: var(--cs-input-shadow);
